@@ -1,7 +1,44 @@
+// Color Pallette
+// $light-purple: #7687ba;
+// $medium-purple: #47529C;
+// $dark-blue: #061329;
+// $coral: #a42328;
+// $maroon: #690e19;
+
+// Font
+$main-font: 'Montserrat', sans-serif;
+
+body {
+  background: #e2b879;
+}
 header {
-    background-color: blue;
+  width: 100%;
+}
+.header {
+  &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 700;
+    color: #9F2399;
+  }
+
+  &__content {
+    font-size: 14px;
+    font-family: $main-font;
+    font-weight: 300;
+    color: #9F2399;
+    display: inline-block;
+  }
+
+  &__links {
+    display: inline-block;
+  }
 }
 
-.nish {
-  color: green;
-}
+
