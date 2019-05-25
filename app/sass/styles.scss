@@ -1,18 +1,15 @@
-// Color Pallette
-// $light-purple: #7687ba;
-// $medium-purple: #47529C;
-// $dark-blue: #061329;
-// $coral: #a42328;
-// $maroon: #690e19;
-
 // Font
 $main-font: 'Montserrat', sans-serif;
 
 body {
-  background: #e2b879;
+  background: #fff;
 }
 header {
   width: 100%;
+  border-bottom: 1px solid #000;
+//   -webkit-box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
+//   -moz-box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
+//   box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
 }
 .header {
   &__container {
@@ -26,6 +23,10 @@ header {
     font-family: $main-font;
     font-weight: 700;
     color: #9F2399;
+  }
+
+  &__content-wrapper {
+      text-align: right;
   }
 
   &__content {
