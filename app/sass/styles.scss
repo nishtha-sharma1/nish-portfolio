@@ -6,7 +6,7 @@ body {
 }
 header {
   width: 100%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
 //   -webkit-box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
 //   -moz-box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
 //   box-shadow: -1px 4px 22px 1px rgba(0,0,0,0.33);
@@ -41,5 +41,54 @@ header {
     display: inline-block;
   }
 }
+
+.main {
+  &__container {
+    box-sizing: border-box;
+    max-width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  &__title {
+    font-family: $main-font;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  &__content-wrapper {
+    margin: 30px 15px;
+  }
+
+  &__links-container {
+    box-sizing: border-box;
+  }
+}
+
+.button {
+  background: #e6e6fA;
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 3px 0px 28px -5px rgba(0,0,0,0.19);
+  margin: 15px;
+
+  &__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: $main-font;
+    line-height: 1;
+    color: #000;
+  }
+}
+
+
 
 
