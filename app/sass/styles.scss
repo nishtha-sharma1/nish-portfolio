@@ -1,93 +1,111 @@
 // Font
 $main-font: 'Montserrat', sans-serif;
 
+//Colors
+$color-white: #fff;
+$color-black: #00171f;
+$color-parisian-blue: #003459;
+$color-cerulean: #007ea7;
+$color-vivid-cerulean: #00a8e8;
+$color-bubbles: #e7f7fc;
+
 body {
- background: #fff;
- max-width: 1200px;
- margin: 0 auto;
+ background:$color-white;
  box-sizing: border-box;
+ margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 .header {
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $color-cerulean;
 }
 
 .header__container {
   display: grid;
+  max-width: 1200px;
+  margin: 10px auto;
   grid-template-columns: 50% 50%;
 }
 
+.header__logo {
+  padding: 10px 20px 10px 30px;
+  max-width: 200px;
+}
+
 .logo {
-  font-size: 14px;
+  font-size: 20px;
   font-family: $main-font;
   font-weight: 700;
-  color: #9F2399;
+  color: $color-parisian-blue;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .header__menu {
-  font-size: 14px;
-  font-family: $main-font;
-  font-weight: 300;
-  color: #9F2399;
-  display: inline-block;
+  text-align: right;
+}
+
+.menu__wrapper {
+  margin: 10px 20px 10px 30px;
+  @media only screen and (min-width: 900px) {
+    margin: 10px 0 10px 200px;
+  }
 }
 
 .menu__links {
-  display: inline-block;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-family: $main-font;
+  font-weight: 700;
+  color: $color-parisian-blue;
+  text-transform: uppercase;
+  text-decoration: none;
+  @media only screen and (min-width: 900px) {
+    display: inline-block;
+  }
+}
+
+.menu__links:hover {
+  background: $color-bubbles;
+  border-radius: 10px;
 }
 
 .main {
-  &__container {
-    box-sizing: border-box;
-    max-width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  &__title {
-    font-family: $main-font;
-    font-size: 30px;
-    line-height: 1;
-  }
-
-  &__text {
-    font-family: $main-font;
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  &__content-wrapper {
-    margin: 30px 15px;
-  }
-
-  &__links-container {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+  background: $color-bubbles;
+  // max-width: 75%;
+  // margin: 0 auto;
+  // text-align: center;
+  // padding: 40px 0;
 }
 
-.button {
-  background: #e6e6fA;
-  padding: 15px;
-  border-radius: 2px;
-  box-shadow: 3px 0px 28px -5px rgba(0,0,0,0.19);
-  margin: 15px;
-
-  &__link {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: $main-font;
-    line-height: 1;
-    color: #000;
-  }
+.main__wrapper {
+  background-image: url('../images/max-stromfeld-Rd1kPbxVP5Q-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.base-margin {
-  margin: 20px 40px;
+.main__title {
+  font-family: $main-font;
+  font-size: 30px;
+  line-height: 1;
 }
 
-
-
-
+.main__text {
+  font-family: $main-font;
+  font-size: 20px;
+  line-height: 1;
+}
