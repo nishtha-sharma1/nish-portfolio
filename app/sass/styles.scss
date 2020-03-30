@@ -29,7 +29,6 @@ p {
 
 .header {
   width: 100%;
-  border-bottom: 1px solid $color-cerulean;
 }
 
 .header__container {
@@ -85,27 +84,83 @@ p {
 
 .main {
   box-sizing: border-box;
-  background: $color-bubbles;
-  // max-width: 75%;
-  // margin: 0 auto;
-  // text-align: center;
-  // padding: 40px 0;
+  display: grid;
 }
 
 .main__wrapper {
-  background-image: url('../images/max-stromfeld-Rd1kPbxVP5Q-unsplash.jpg');
+  width: 100%;
+  background: linear-gradient(
+    rgba(133, 193, 233, 0.65), 
+    rgba(133, 193, 233, 0.65)
+  ), url('../images/max-stromfeld-Rd1kPbxVP5Q-unsplash.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+.main__content {
+  display: block;
+  background-color: $color-bubbles;
+  margin: 225px 0 200px;
+  padding: 10px 0;
+  width: 100%;
+  @media only screen and (min-device-width: 900px) {
+    width: 50%;
+  }
 }
 
 .main__title {
   font-family: $main-font;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 35px;
   line-height: 1;
+  padding: 10px;
+  text-align: center;
+  @media only screen and (min-device-width: 900px) {
+    text-align: left;
+  }
 }
 
-.main__text {
+.intro {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  background-color: $color-bubbles;
+}
+
+.intro__content {
+  grid-column-start: 2;
+  grid-column-end: 3;
   font-family: $main-font;
-  font-size: 20px;
+  color: $color-parisian-blue;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 10px;
+  @media only screen and (min-device-width: 900px) {
+    font-size: 20px;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 50% 50%;
+}
+
+.footer__menu {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.social {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 15px;
   line-height: 1;
+  padding: 10px;
+}
+
+.social__links {
+  font-size: 15px;
 }
