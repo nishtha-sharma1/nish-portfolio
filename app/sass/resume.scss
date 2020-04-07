@@ -1,0 +1,100 @@
+.resume__wrapper {
+  display: grid;
+  margin: 20px 0;
+  grid-template-columns: 5% 90% 5%;
+  // background: linear-gradient(
+  //   rgba(0, 126, 167, 0.70), 
+  //   rgba(133, 193, 233, 0.55)
+  // ), url('../images/plant.jpg');
+  // background-size: cover;
+  @media only screen and (min-device-width: 939px) {
+    grid-template-columns: 10% 80% 10%;
+  }
+}
+
+.section__title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+  border-bottom: 1px dotted $color-vivid-cerulean;
+  color: $color-parisian-blue;
+}
+
+.section__container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  @media only screen and (min-device-width: 768px) {
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+}
+
+.section__sub-title {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: 	#a9a9a9;
+  text-transform: uppercase;
+  padding: 20px;
+  @media only screen and (min-device-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-transform: uppercase;
+  }
+}
+
+.section__info {
+  border-top: 1px dotted $color-vivid-cerulean;
+  @media only screen and (min-device-width: 768px) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-top: none;
+    border-left: 1px dotted $color-vivid-cerulean;
+  }
+}
+
+.section__place {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1;
+  color: $color-parisian-blue;
+  padding: 20px;
+  text-transform: uppercase;
+  @media only screen and (min-device-width: 768px) {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -10px;
+      top: 50%;
+      width: 20px;
+      height: 2px;
+      border-bottom: 1px dotted $color-vivid-cerulean;
+    }
+  }
+}
+
+.section__description {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 15px;
+  color: $color-parisian-blue;
+}
+
+.section__list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 25px;
+}
+
+.section__description {
+  margin: 10px;
+}

@@ -1,0 +1,68 @@
+.main__wrapper {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(0, 126, 167, 0.70), 
+    rgba(133, 193, 233, 0.55)
+  ), url('../images/max-stromfeld-Rd1kPbxVP5Q-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+.main__content {
+  grid-column-start: 1;
+  grid-column-end: span end;
+  background-color: $color-white;
+  margin: 225px 0 200px;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  @media only screen and (min-device-width: 939px) {
+    grid-column-start: 2;
+    width: 45%;
+    &::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      top: 0;
+      background-color: $color-white;
+      width: 55%;
+      height: 100%;
+    }
+  }
+}
+
+.main__title {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px;
+  text-align: center;
+  @media only screen and (min-device-width: 939px) {
+    text-align: left;
+  }
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  background-color: $color-white;
+  padding: 20px 0;
+}
+
+.intro__content {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-family: $main-font;
+  color: $color-parisian-blue;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 15px;
+  @media only screen and (min-device-width: 939px) {
+    font-size: 20px;
+  }
+}

@@ -5,6 +5,7 @@ const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
+const cssNano = require('gulp-cssnano');
 
 function copy() {
     return gulp.src([
@@ -51,7 +52,7 @@ function watch() {
 gulp.task('watch', watch);
 
   function compileSass() {
-    return gulp.src('app/sass/*.scss')
+    return gulp.src('app/sass/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(rename({
