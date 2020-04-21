@@ -5,52 +5,39 @@
   <meta charset="utf-8">
   <title>Nishtha Sharma</title>
   <link rel="stylesheet" href="/sass/styles.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="/js/script.min.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <div class="header__logo">
-        <h1 class="logo">Nishtha Sharma</h1>
-      </div>
-      <div class="header__menu">
-        <a class="menu__links" href="#">Contact</a>
-        <a class="menu__links" href="/resume.html">Resume</a>
-        <a class="menu__links" href="#">Work</a>
-      </div>
-    </div>
+    <nav role="navigation" class="menu">
+        <p class="logo-text">Nishtha Sharma</p>
+        <a href='#' class="menu__text">Menu</a>
+        <ul class="menu__items js-toggle-menu">
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Resume</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
   </header>
-  <main class="main">
-    <div class="main__wrapper">
-      <div class="main__content">
-        <h2 class="main__title">Hi, i'm glad you're&nbsphere.</h2>
-      </div>
-    </div>
-    <div class="intro">
-      <div class="intro__content">
-        <p class="intro__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+  <main role="main" class="main">
+    <div class="hero">
+      <p class="hero__sub-text">Hi, I'm glad you're here</p>
+      <p class="hero__sub-text">It's pronounced Nish-ta</p>
+      <span class="small-text">I'm a</span>
+      <h1 class="hero__title">Front End Web Developer</h1>
+      <p class="hero__text">Ready to bring your ideas and designs to life</p>
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__menu">
-      <div class="socials">
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-github-square"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-instagram"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab facebook-square"></i></a>
-      </div>
-      <div class="footer__links">
-        <a class="link" href="#">Contact</a>
-        <a class="link" href="#">Resume</a>
-        <a class="link" href="#">Work</a>
-      </div>
-      <div class="copyright">
-        <p>Copyright © 2020 Nishtha Sharma • Freelance Web Developer</p>
-      </div>
-    </div>
   </footer>
 </body>
+
+<!-- 
+<i class="fab fa-instagram-square"></i>
+<i class="fab fa-github-square"></i>
+<i class="fab fa-linkedin"></i> -->

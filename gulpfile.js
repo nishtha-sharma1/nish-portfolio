@@ -5,7 +5,6 @@ const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
-const cssNano = require('gulp-cssnano');
 
 function copy() {
     return gulp.src([
@@ -33,7 +32,7 @@ function serve() {
 function processJs() {
     return gulp.src('app/js/*.js')
     .pipe(babel({
-        presets: ['env']
+        presets: ['@babel/preset-env']
     }))
     .pipe(uglify())
     .pipe(rename({
