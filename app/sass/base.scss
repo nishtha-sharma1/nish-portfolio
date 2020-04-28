@@ -1,12 +1,11 @@
 // Variables
 @import 'variables';
 
+html {
+  font-size: 62.5%; /* Sets up the Base 10 stuff */
+}
+
 body {
-  background: $color-white;
+  background: $white;
   box-sizing: border-box;
-  margin: 0;
- }
- 
- h1,h2,h3,p {
-   margin: 0;
- }
+}

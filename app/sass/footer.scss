@@ -1,0 +1,40 @@
+
+.footer {
+  margin: 30px auto;
+}
+
+.footer__wrapper {
+  width: calc(100vw - 55px);
+	max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  font-family: $main-font;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: (12/12);
+	text-transform: uppercase;
+  color: $bright-red;
+  padding: 10px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  @include font-size(2);
+
+  color: $bright-red;
+}
+
+.footer__link {
+  align-self: center;
+  margin: 10px 0;
+  padding: 0 20px;
+}

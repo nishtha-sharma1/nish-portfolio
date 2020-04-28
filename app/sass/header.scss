@@ -1,9 +1,6 @@
-
 .header {
 	width: 100%;
-	background: #eae7dc;
 	position: relative;
-	border-bottom: 1px solid #d8c3af;
 }
 
 .menu {
@@ -15,15 +12,14 @@
 }
 
 .logo-text {
-	background: #d8c3af;
-	margin: 20px 10px;
+	@include font-size(2);
+
+	border: 1px solid $bright-red;
 	padding: 5px 10px;
 	max-width: 100px;
-	color: #e85a4f;
-	font-family: 'Karla', sans-serif;
+	color: $black;
+	font-family: $title-font;
 	font-weight: 400;
-	font-size: 20px;
-	line-height: (20/16);
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
@@ -35,16 +31,15 @@
 }
 
 .menu__text {
+	@include font-size(1.8);
+
 	align-self: center;
-	font-family: 'Karla', sans-serif;
+	font-family: $main-font;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: (18/15);
 	text-transform: uppercase;
 	text-align: right;
-	color: #000;
+	color: $bright-red;
 	padding: 5px 10px;
-	background: #eae7dc;
 	text-decoration: none;
 
 	@media only screen and (min-device-width: 768px) {
@@ -79,7 +74,7 @@
 	visibility: hidden;
 	transition-timing-function: ease-in;
 	transition: 0.2s;
-	border-top: 2px solid #d8c3a5;
+	border-top: 2px solid $bright-red;
 
 	@media only screen and (min-device-width: 768px) {
 		position: static;
@@ -92,11 +87,11 @@
 }
 
 .js-toggle-menu--open {
+	background-color: $white;
 	left: 0;
 	opacity: 1;
 	transition: 0.2s;
 	transition-timing-function: ease-out;
-	background: #eae7dc;
 	cursor: pointer;
 	font-size: 2rem;
 	width: 100%;
@@ -109,11 +104,11 @@
 }
 
 .menu__link {
+	@include font-size(1.8);
+
 	text-decoration: none;
-	font-family: 'Karla', sans-serif;
+	font-family: $main-font;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: (18/15);
 	text-transform: uppercase;
-	color: #000;
+	color: $bright-red;
 }

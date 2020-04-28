@@ -1,10 +1,16 @@
 // Font
-$main-font: 'Montserrat', sans-serif;
+$title-font: 'Roboto', sans-serif;
+$main-font: 'Karla', sans-serif;
 
-//Colors
-$color-white: #fff;
-$color-black: #00171f;
-$color-parisian-blue: #003459;
-$color-cerulean: #007ea7;
-$color-vivid-cerulean: #00a8e8;
-$color-bubbles: #e7f7fc;
+// Colors
+$white: #fff;
+$black: #000;
+
+$bright-red: #c12957;
+$medium-dark: #9a0a35;
+
+// Font Size
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

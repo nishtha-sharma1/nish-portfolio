@@ -5,86 +5,81 @@
   <meta charset="utf-8">
   <title>Nishtha Sharma Resume</title>
   <link rel="stylesheet" href="/sass/styles.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="/js/script.min.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <div class="header__logo">
-        <h1 class="logo">Nishtha Sharma</h1>
-      </div>
-      <div class="header__menu">
-        <a class="menu__links" href="/contact.html">Contact</a>
-        <a class="menu__links" href="/resume.html">Resume</a>
-        <a class="menu__links" href="#">Work</a>
-      </div>
-    </div>
+    <nav role="navigation" class="menu">
+      <p class="logo-text">Nishtha Sharma</p>
+      <a href='#' class="menu__text">Menu</a>
+      <ul class="menu__items js-toggle-menu">
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="main__resume">
    <div class="resume__wrapper">
-    <h2 class="section__title">Experience</h2>
-     <div class="section__container">
-      <h2 class="section__sub-title">Red Ventures</h2>
-      <div class="section__info">
-        <h2 class="section__place">Front End Associate | 2017 - 2019 </h2>
-        <ul class="section__list">
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-        </ul>
-      </div>
-      <div class="section__info">
-        <h2 class="section__place"> Something Else | 2017 - 2017 </h2>
-        <ul class="section__list">
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-        </ul>
-      </div>
-      <div class="section__info">
-        <h2 class="section__place"> Something Else | 2014 - 2017 </h2>
-        <ul class="section__list">
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-        </ul>
-      </div>
-     </div>
-     <h2 class="section__title">Skills</h2>
-     <div class="section__container">
-      <h2 class="section__sub-title">tech</h2>
-      <div class="section__info">
-        <ul class="section__list">
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-         <li class="section__description">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</li>
-        </ul>
-      </div>
-     </div>    
+    <section class="resume__content">
+      <h2 class="section__title">Skills</h2>
+      <ul class="section__list">
+        <li class="section__list-item">Javascript</li>
+        <li class="section__list-item">CSS3</li>
+        <li class="section__list-item">Sass</li>
+        <li class="section__list-item">Jquery</li>
+        <li class="section__list-item">HTML5</li>
+        <li class="section__list-item">Gulp</li>
+        <li class="section__list-item">Wordpress</li>
+        <li class="section__list-item">VScode</li>
+        <li class="section__list-item">Git</li>
+        <li class="section__list-item">Github</li>
+      </ul>
+      <span class="small-text">* indicates proficient</span>
+    </section>
+    <section class="resume__content timeline-stuff">
+      <h2 class="section__title">Experience</h2>
+      <span class="small-text">Red Ventures, 2017 – 2019</span>
+      <p class="timeline-text">Front End Developer</p>
+      <ul class="section__list timeline">
+        <li class="section__list-item">
+          Helped maintain and create user experiences on websites for brands such as The Simple Dollar, Bankrate, and creditcards.com
+        </li>
+        <li class="section__list-item">Conducted code reviews for peers through Github to help keep code consistent</li>
+        <li class="section__list-item">Developed naming convention for use in companies testing software</li>
+        <li class="section__list-item">Experience working on deadlines with team of analysts, designers, and writers</li>
+        <li class="section__list-item">Created cookies tag to be used on website to track user experience</li>
+        <li class="section__list-item">Volunteered time to help make edits on company non-profit website Forward787</li>
+        <li class="section__list-item">Implemented designs in Wordpress for ToHerCredit theme</li>
+      </ul>
+      <span class="small-text">Red Ventures, 2014 – 2017</span>
+      <p class="timeline-text">Content Outreach Specialist</p>
+      <ul class="section__list timeline">
+        <li class="section__list-item">
+          Helped maintain and create user experiences on websites for brands such as The Simple Dollar, Bankrate, and creditcards.com
+        </li>
+        <li class="section__list-item">Pitch content and successfully manage relationships with key strategic partners on highly influential websites in our vertical industries</li>
+        <li class="section__list-item">Create and implement effective strategies to organically increase site visits rankings, and further improve conversion rates for a variety of company owned and managed sites,</li>
+        <li class="section__list-item">Partner with SEO team to understand content impact on the quality of website traffic and establish key performance metrics to determine campaign success,</li>
+        <li class="section__list-item">Own social media initiatives and content creation for flagship websites with a goal of increasing product awareness and social media following</li>
+        <li class="section__list-item">Participated in 5 month Internal Tech Bootcamp which included 20-25 hours of work per week in addition to Full Time Content</li>
+      </ul>
+    </section>
    </div>
   </main>
   <footer class="footer">
-    <div class="footer__menu">
-      <div class="socials">
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-github-square"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab fa-instagram"></i></a>
-        <a class="social__links" href="https://www.linkedin.com/feed/"><i class="fab facebook-square"></i></a>
+    <div class="footer__wrapper">
+      <div class="footer__menu">
+        <a class="footer__link social" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="footer__link social" href="#"><i class="fab fa-github-square"></i></a>
+        <a class="footer__link social" href="#"><i class="fab fa-linkedin"></i></a>
       </div>
-      <div class="footer__links">
-        <a class="link" href="#">Contact</a>
-        <a class="link" href="/resume.html">Resume</a>
-        <a class="link" href="#">Work</a>
-      </div>
-      <div class="copyright">
-        <p>Copyright © 2020 Nishtha Sharma • Freelance Web Developer</p>
-      </div>
+      <span class="copyright">Copyright © 2020 Nishtha Sharma </span>
     </div>
   </footer>
 </body>
