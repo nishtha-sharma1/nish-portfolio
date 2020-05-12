@@ -11,19 +11,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="/js/script.min.js"></script>
 </head>
-
 <body>
-  <header class="header">
-    <nav role="navigation" class="menu">
-        <p class="logo-text">Nishtha Sharma</p>
-        <a href='#' class="menu__text">Menu</a>
-        <ul class="menu__items js-toggle-menu">
-          <li class="menu__item"><a class="menu__link" href="/resume.html">Resume</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-  </header>
+  @@include('./header.html')
   <main role="main" class="main">
     <div class="hero">
       <div class="hero__wrapper">
@@ -38,18 +27,9 @@
             Ready to bring your ideas and designs to&nbsp;life
           </span>
         </h1>
+        <a class="hero__link" href="/resume.html">Learn More</a>
       </div>
-      <p class="hero__text">Click on my <a class="hero__link" href="/resume.html">resume</a> to learn more</p>
     </div>
   </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="footer__menu">
-        <a class="footer__link social" href="#"><i class="fab fa-instagram"></i></a>
-        <a class="footer__link social" href="#"><i class="fab fa-github-square"></i></a>
-        <a class="footer__link social" href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <span class="copyright">Copyright © 2020 Nishtha Sharma </span>
-    </div>
-  </footer>
+  @@include('./footer.html')
 </body>
