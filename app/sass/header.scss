@@ -13,24 +13,47 @@
 	justify-content: space-between;
 }
 
+.home-box {
+	display: flex;
+
+	@media only screen and (min-width: 768px) {
+		padding: 10px 15px;
+	}
+}
+
+.home__link {
+	@include font-size(1.6);
+
+  color: $medium-dark;
+	align-self: center;
+}
+
+.home-link-hide {
+	display: none;
+}
+
 .logo-text {
 	@include font-size(1.6);
 
-	background: $white;
+	background: $medium-dark;
 	padding: 5px 0;
 	max-width: 100px;
-	color: $medium-dark;
+	color: $white;
 	font-family: $main-font;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
-	vertical-align: middle;
+	height: fit-content;
 
-	@media only screen and (min-device-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		max-width: 200px;
-		padding: 10px 15px;
-		align-self: center;
+		padding: 10px;
 	}
+}
+
+.logo-text-opposite {
+	background: $white;
+	color: $medium-dark;
 }
 
 .menu__text {
@@ -41,11 +64,12 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	text-align: right;
-	color: $white;
+	color: $medium-dark;
 	padding: 5px 10px;
 	text-decoration: none;
+	background: transparent;
 
-	@media only screen and (min-device-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		display: none;
 	}
 }
@@ -55,15 +79,15 @@
 	margin: 0;
 	padding: 20px 30px;
 
-	@media only screen and (min-device-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		padding: 0;
 	}
 }
 
 .menu__item {
-	padding: 10px 0;
+	padding: 20px;
 
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (min-width: 768px) {
     display: inline-block;
 		padding: 10px 20px;
 	}
@@ -79,13 +103,14 @@
 	transition: 0.2s;
 	border-top: 2px solid $bright-red;
 
-	@media only screen and (min-device-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		position: static;
 		opacity: 1;
 		border-top: none;
 		transition: none;
 		padding: 30px 20px 20px;
 		visibility: visible;
+		color: $white;
 	}
 }
 
@@ -102,8 +127,9 @@
 	z-index: 1;
 	visibility: visible;
 	height: 100vh;
+	color: $medium-dark;
 
-	@media only screen and (min-device-width: 768px) {
+	@media only screen and (min-width: 768px) {
 		display: none;
 	}
 }
@@ -116,12 +142,27 @@
 	font-weight: 400;
 	text-transform: uppercase;
 	color: $medium-dark;
-
-	@media only screen and (min-device-width: 768px) {
-		color: $white;
-	}
 }
 
-.medium-dark {
-	color: $medium-dark;
+.menu-button {
+	@include font-size(1.6);
+
+	padding: 10px 20px;
+	background: $light-pink;
+	border-radius: 3px;
+	color: $bright-red;
+	border-style: none;
+	font-family: $main-font;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.white-menu-text {
+	color: $white;
+}
+
+.white {
+	@media only screen and (min-width: 768px) {
+		color: $white;
+	}
 }

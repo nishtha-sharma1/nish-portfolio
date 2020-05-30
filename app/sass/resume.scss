@@ -142,7 +142,7 @@
   display: block;
   margin: 0 auto;
 
-  @media only screen and (min-device-width: 940px) {
+  @media only screen and (min-width: 940px) {
     max-width: 150px;
   }
 
@@ -150,7 +150,7 @@
     bottom: 0;
     position: absolute;
 
-    @media only screen and (min-device-width: 768px) {
+    @media only screen and (min-width: 768px) {
       left: 50%;
       margin-left: -100px;
     }
@@ -167,4 +167,20 @@
 
 .fas {
   margin-right: 15px;
+}
+
+.link {
+  @include font-size(1.5);
+
+  font-family: $main-font;
+  font-weight: 400px;
+  max-width: 100px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  color: $white;
+  background: $medium-dark;
+  text-decoration: none;
+  display: block;
+  margin: 20px auto 0;
 }

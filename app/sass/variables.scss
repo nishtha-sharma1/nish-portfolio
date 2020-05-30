@@ -5,9 +5,11 @@ $main-font: 'Karla', sans-serif;
 // Colors
 $white: #fff;
 $black: #000;
+$grey: #d8d8d8;
 
 $bright-red: #c12957;
 $medium-dark: #9a0a35;
+$light-pink: #ffe9ec;
 
 // Font Size
 @mixin font-size($sizeValue: 1.6) {

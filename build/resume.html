@@ -6,7 +6,6 @@
   <title>Nishtha Sharma Resume</title>
   <link rel="stylesheet" href="/sass/styles.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script src="/js/script.min.js"></script>
@@ -15,34 +14,42 @@
 <body>
   <header class="header">
   <nav role="navigation" class="menu">
+    <div class="home-box">
+      <a class="home__link" href="/"><i class="fas fa-home"></i></a>
       <p class="logo-text">Nishtha Sharma</p>
-      <a href='#' class="menu__text">Menu</a>
+    </div>
+      <button class="menu__text">Menu</button>
       <ul class="menu__items js-toggle-menu">
         <li class="menu__item"><a class="menu__link" href="/resume.html">Resume</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Projects</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+        <li class="menu__item"><a class="menu__link" href="/projects.html">Projects</a></li>
+        <button class="menu-button js-contact">Contact</button>
       </ul>
     </nav>
 </header>
   <main class="main__resume">
    <div class="resume__wrapper">
     <section class="resume__content skill-stuff">
+      <a class="link" href="https://drive.google.com/file/d/1Wq-IcAzOSYPCUToRbOSYjqusBLhef9er/view?usp=sharing">Click for pdf</a>
       <h2 class="section__title"> <i class="fas fa-laptop-code"></i>Skills</h2>
       <ul class="section__list skills">
         <li class="section__list-item">Javascript</li>
-        <li class="section__list-item">CSS3</li>
+        <li class="section__list-item">CSS</li>
         <li class="section__list-item">Sass</li>
         <li class="section__list-item">Jquery</li>
-        <li class="section__list-item">HTML5</li>
+        <li class="section__list-item">HTML</li>
         <li class="section__list-item">Gulp</li>
         <li class="section__list-item">Wordpress</li>
-        <li class="section__list-item">VScode</li>
+        <li class="section__list-item">Vue.Js</li>
         <li class="section__list-item">Git</li>
         <li class="section__list-item">Github</li>
+        <li class="section__list-item">PHP</li>
+        <li class="section__list-item">Foundation</li>
+        <li class="section__list-item">Bootstrap</li>
+        <li class="section__list-item">CSS grid</li>
       </ul>
     </section>
     <section class="resume__content timeline-stuff">
-      <h2 class="section__title"> <i class="fas fa-briefcase"></i> Experience</h2>
+      <h2 class="section__title"> <i class="fas fa-briefcase"></i>Experience</h2>
       <p class="timeline-text">Front End Developer</p>
       <span class="small-text">Red Ventures</span>
       <span class="small-text">November 2017 - November 2019</span>
@@ -113,23 +120,59 @@
       <p class="timeline-text show-more-section">Assistant Account Executive</p>
       <span class="small-text show-more-section">Sweeney Marketing and Public Relations</span>
       <span class="small-text show-more-section">June 2012 – June 2013</span>
-      <p class="summary-text show-more-section">Successfully pitched content and managed relationships with key strategic partners on highly influential websites in vertical industries</p>
+      <p class="summary-text show-more-section">Helped execute marketing and public relations strategies for national B2B and B2C clients, including Acuity Brands, Kent State University, Jo-Ann Fabric and Craft Stores, Chef's Planet and The Plaza Group</p>
       <ul class="section__list show-more-section timeline">
         <li class="section__list-item">
-          Helped execute marketing and public relations strategies for national clients, including: Acuity Brands, Kent State University, Jo-Anne Fabric and Craft Stores, Chef's Planet and The Plaza Group
+          Created and distributed press releases to national media outlets on a weekly basis and conducted media follow-up which resulted in more than 10 full-length feature articles in trade magazines and a feature article in the New York Times
+        </li>
+        <li class="section__list-item">
+          Developed monthly Google analytic and search engine optimization reports
+        </li>
+        <li class="section__list-item">
+          Created monthly content for social media outlets including relevant industry news, website promotion and product and project announcements
+        </li>
+        <li class="section__list-item">
+          Coordinated and developed case studies through client and end-user interviews and determined pitching strategy for completed case study
+        </li>
+        <li class="section__list-item">
+          Developed and maintained monthly and quarterly media reports by evaluating client and competitor media coverage
         </li>
       </ul>
+    </section>
+    <section class="resume__content">
+      <h2 class="section__title"> <i class="fas fa-graduation-cap"></i>Education</h2>
+      <p class="timeline-text">B.A. Communication Studies and French</p>
+      <span class="small-text">University of North Carolina Wilmington</span>
+      <span class="small-text">May 2011</span>
     </section>
    </div>
   </main>
   <footer class="footer">
   <div class="footer__wrapper">
     <div class="footer__menu">
-      <a class="footer__link social" href="#"><i class="fab fa-instagram"></i></a>
-      <a class="footer__link social" href="#"><i class="fab fa-github-square"></i></a>
-      <a class="footer__link social" href="#"><i class="fab fa-linkedin"></i></a>
+      <a class="footer__link social" href="https://www.instagram.com/nish3000/?hl=en"><i class="fab fa-instagram"></i></a>
+      <a class="footer__link social" href="https://github.com/nishtha-sharma1"><i class="fab fa-github-square"></i></a>
+      <a class="footer__link social" href="https://www.linkedin.com/in/nishtha-sharma-b68b5733/"><i class="fab fa-linkedin"></i></a>
     </div>
     <span class="copyright">Copyright © 2020 Nishtha Sharma </span>
   </div>
 </footer>
+  <div class="form__wrapper">
+  <form class="form__contact" action="#" method="POST">
+    <span class="close-button"><i class="far fa-window-close js-close"></i></span>
+    <p class="modal-text">This contact form doesn't actually work at the moment. Please contact me via email: <br> sharmanish22@gmail.com </p>
+    <div class="input-container">
+      <label class="label" for="name">Name:</label>
+      <input type="text" id="name" name="user_name">
+    </div>
+    <div class="input-container">
+      <label class="label" for="mail">E-mail:</label>
+      <input type="email" id="mail" name="user_email">
+    </div>
+    <div class="input-container">
+      <label class="label" for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+  </form>
+</div>
 </body>

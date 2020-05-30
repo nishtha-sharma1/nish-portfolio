@@ -1,0 +1,39 @@
+.main__projects {
+  width: 100%;
+  padding: 30px 0 50%;
+  background: /* top, transparent red */
+  linear-gradient(
+    rgba(154, 10, 53, 0.8),
+    rgba(154, 10, 53, 0.4)
+  ),
+  /* bottom, image */
+  url("../images/dog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media only screen and (min-width: 768px) {
+    padding: 50px 0 50%;
+  }
+}
+
+.wrapper {
+  margin: 20px;
+}
+
+.content-box {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px;
+  background: $light-pink;
+  border-radius: 5px;
+
+  p {
+    @include font-size(1.6);
+
+    font-family: $main-font;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+  }
+}

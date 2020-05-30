@@ -34,11 +34,11 @@
 .hero__wrapper {
   margin: 40px 10px;
   padding: 20px;
-  @media only screen and (min-device-width: 768px) {
+
+  @media only screen and (min-width: 768px) {
     margin: 40px auto;
     max-width: 700px;
   }
-  // width: calc(100vw - 55px);
 }
 
 .hero__title {
@@ -46,16 +46,12 @@
   text-transform: uppercase;
   color: $white;
   background: $medium-dark;
-  // margin: 0 auto;
-  // max-width: 600px;
 
   span {
     position: relative;
     overflow: hidden;
     display: block;
     line-height: 1.2;
-    // max-width: 1200px;
-    // margin: 0 auto;
   }
 
   span::after {
@@ -84,8 +80,9 @@
 
   span:nth-of-type(1),
   span:nth-of-type(3) {
-    font-weight: 400;
     @include font-size(3);
+
+    font-weight: 400;
     margin: 10px 0;
 
     @media only screen and (min-device-width: 768px) {
