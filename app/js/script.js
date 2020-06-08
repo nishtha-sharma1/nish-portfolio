@@ -84,8 +84,9 @@ document.addEventListener("DOMContentLoaded", function() {
       });
       if (showMoreButton.classList.contains('show-more--open')) {
         showMoreButton.innerHTML = 'See Less';
-      } else {
-        showMoreButton.innerHTML = 'See More';
+      } 
+      else {
+        showMoreButton.innerHTML = 'See Experience Prior to 2014';
       }
     });
   }
