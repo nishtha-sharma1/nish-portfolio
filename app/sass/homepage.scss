@@ -1,7 +1,6 @@
 .main {
   box-sizing: border-box;
-  width: 100%;
-  padding: 200px 0 50%;
+  padding: 200px 0 5%;
   margin-top: -100px;
   background: $medium-dark;
 }
@@ -95,16 +94,16 @@
   }
 
   span:nth-of-type(2) {
-    @include font-size(4);
+    @include font-size(5.5);
 
     font-weight: 700;
 
     @media only screen and (min-device-width: 768px) {
-      @include font-size(5);
+      @include font-size(5.5);
     }
 
     @media only screen and (min-device-width: 940px) {
-      @include font-size(6);
+      @include font-size(8);
     }
   }
 
@@ -127,16 +126,10 @@
  .hero__link {
   @include font-size(1.6);
 
-  font-family: $main-font;
   font-weight: 400px;
   max-width: 100px;
   padding: 10px 20px;
-  border-radius: 30px;
-  text-align: center;
 	line-height: (18/18);
-  color: $medium-dark;
-  background: $white;
-  text-decoration: none;
   display: block;
   margin: 40px auto 0;
 

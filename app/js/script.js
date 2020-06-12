@@ -70,24 +70,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     homeLink.classList.add('home-link-hide');
   }
-  
-  // Show More Function Button 
-  const showMoreButton = document.querySelector('.js-show-more');
-  
-  if (showMoreButton) {
-    const showMoreSection = document.querySelectorAll('.show-more-section');
-
-    showMoreButton.addEventListener('click', () => {
-      showMoreButton.classList.toggle('show-more--open');
-      showMoreSection.forEach((i) => {
-        i.classList.toggle('show-more-section--open');
-      });
-      if (showMoreButton.classList.contains('show-more--open')) {
-        showMoreButton.innerHTML = 'See Less';
-      } 
-      else {
-        showMoreButton.innerHTML = 'See Experience Prior to 2014';
-      }
-    });
-  }
 });

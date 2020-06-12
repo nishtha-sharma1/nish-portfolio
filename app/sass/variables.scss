@@ -16,3 +16,23 @@ $light-pink: #ffe9ec;
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
+
+// Base Styles
+.link {
+  font-family: $main-font;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.solid-link {
+  &--white {
+    color: $medium-dark;
+    background: $white;
+  }
+
+  &--medium-dark {
+    color: $white;
+    background: $medium-dark;
+  }
+}
