@@ -14,19 +14,20 @@
 <body>
   @@include('./header.html')
   <main role="main" class="main main__home">
-    <div class="hero">
+    <section class="hero">
       <div class="hero__wrapper">
-        <span class="sub-text">It's pronounced Nish-ta.</span>
         <h1 class="hero__title">
-           I'm a <span>Front End Developer </span>.
-        </h1>
-        <span class="sub-text">
-          Ready to bring your ideas and designs to&nbsp;life
-        </span>
+          <span>I'm a</span>Front&nbsp;End Developer
+       </h1>
+        <div class="flip-container flip-container--sub-headings">
+          <p class="hero__text">It's pronounced Nish-ta.</p>
+          <p class="hero__text">Ready to bring your ideas and designs to&nbsp;life</p>
+        </div>
         <a class="hero__link link solid-link--white" href="/resume.html">Learn More</a>
       </div>
-    </div>
+    </section>
   </main>
   @@include('./footer.html')
   @@include('./contact.html')
 </body>
+

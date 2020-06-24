@@ -12,6 +12,9 @@ $bright-red: #c12957;
 $medium-dark: #9a0a35;
 $light-pink: #ffe9ec;
 
+$dark: #1f1425;
+$text: #fbfdf9;
+
 // Font Size
 @mixin font-size($sizeValue: 1.6) {
   font-size: ($sizeValue * 10) + px;
