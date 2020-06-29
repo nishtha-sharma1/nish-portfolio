@@ -34,14 +34,12 @@
 .logo-text {
 	@include font-size(1.6);
 
-	background: $medium-dark;
 	padding: 5px 0;
 	max-width: 100px;
-	color: $white;
-	font-family: $main-font;
+	color: #afc826;
+	font-family: $feature-font;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
 	align-self: center;
 	height: fit-content;
 
@@ -51,10 +49,10 @@
 	}
 }
 
-.logo-text-opposite {
-	background: $white;
-	color: $medium-dark;
-}
+// .logo-text-opposite {
+// 	background: $white;
+// 	color: $medium-dark;
+// }
 
 .menu__text {
 	@include font-size(1.8);

@@ -2,6 +2,8 @@
 $title-font: 'Roboto', sans-serif;
 $main-font: 'Karla', sans-serif;
 $feature-font: 'Montserrat', sans-serif;
+$accent-font: 'Permanent Marker', cursive;
+$accent-font-secondary: 'Fugaz One', cursive;
 
 // Colors
 $white: #fff;
@@ -26,7 +28,7 @@ $text: #fbfdf9;
   font-family: $main-font;
   text-decoration: none;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .solid-link {
