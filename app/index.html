@@ -14,19 +14,28 @@
   <script src="/js/script.min.js"></script>
 </head>
 <body>
-  @@include('./header.html')
-  <main role="main" class="main main__home">
-    <section class="hero">
-      <div class="hero__wrapper">
-        <h1 class="hero__title">
-         Hi, I'm a <span>Front&nbsp;End Developer</span>
-       </h1>
-       <div class="hero__text-container">
-        <p class="hero__text">Ready to bring your ideas and designs to&nbsp;life</p>
-        <a class="hero__link link solid-link--white" href="/resume.html">Learn More</a>
-      </div>
-        <span class="animation">It's pronounced Nish-ta.</span>
-      </div>
+  <!-- @@include('./header.html') -->
+  <main class="main main__home">
+    <section class="postcard">
+     <div class="hero">
+       <div class="intro-text">
+         <h1 class="name">
+           <span>
+            Nishtha 
+           </span>
+           <span>
+            Sharma
+           </span>
+          </h1>
+         <p class="sub-title">Front End Developer ready to bring your ideas and designs to life</p>
+         <span class="accent-text">(It's pronounced Nishtha)</span>
+       </div>
+       <div class="btn-containers">
+        <a class="home__link" href="/resume.html">Learn More</a>
+        <a class="home__link" href="/projects.html">Work</a>
+        <button class="home__link js-contact">Contact</button>
+       </div>
+     </div>
     </section>
   </main>
   @@include('./footer.html')
