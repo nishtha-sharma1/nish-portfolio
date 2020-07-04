@@ -2,59 +2,54 @@
 main {
   width: 100%;
   height: 100%;
-  background: #f6cd20;
-  padding: 20px 10px;
+  background: url("../images/cookie-the-pom-large.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: #a1544a;
+  background-blend-mode: luminosity;
 
   @media only screen and (min-width: 768px) {
-    padding: 50px;
+    padding: 20px 10px;
+  }
+
+  @media only screen and (min-width: 940px) {
+    padding: 30px;
   }
 }
 
 .postcard {
-  background: $white;
-  -webkit-box-shadow: 1px 3px 14px -1px rgba(0, 0, 0, 0.46);
-  -moz-box-shadow: 1px 3px 14px -1px rgba(0, 0, 0, 0.46);
-  box-shadow: 1px 3px 14px -1px rgba(0, 0, 0, 0.46);
-  padding: 5px;
+  -webkit-box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
+  -moz-box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
+  box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
+  height: 100%;
+  background: /* top, transparent red */
+  linear-gradient(
+    rgba(161, 84, 74, 0.7),
+    rgba(161, 84, 74, 0.7)
+  );
 }
 
-.hero {
+.text-wrapper {
   display: flex;
   flex-direction: column;
-
-  @media only screen and (min-width: 940px) {
-    flex-direction: row;
-  }
-}
-
-.intro-text {
-  padding: 30px 10px 20px;
-  background: url("../images/cookie-the-pom-medium.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-color: #6d4948;
-  background-blend-mode: multiply;
-
-  @media only screen and (min-width: 940px) {
-    width: 50%;
-  }
+  height: 100%;
+  max-width: 1200px;
+  width: calc(100vw - 100px);
+  margin: 0 auto;
 }
 
 .name {
   @include font-size(5);
 
   font-family: $title-font;
-  color: #6e5455;
+  color: #a1544a;
   mix-blend-mode: screen;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0 auto 30px;
+  display: block;
+  margin: 15px 0;
   text-align: center;
-
-  span {
-    display: block;
-  }
 
   @media only screen and (min-width: 470px) {
     @include font-size(6);
@@ -64,23 +59,58 @@ main {
     @include font-size(7);
   }
 
+  @media only screen and (min-width: 768px) {
+    @include font-size(8.5);
+  }
+
   @media only screen and (min-width: 940px) {
-    text-align: left;
+    @include font-size(10);
   }
 }
 
 .sub-title {
   @include font-size(2.5);
 
-  font-family: $main-font;
+  font-family: $open-sans;
   color: $white;
   line-height: 1.2;
   font-weight: 400;
-  margin: 0 5px 20px;
-  text-align: center;
+  margin: 20px;
+  padding: 15px 0;
 
-  @media only screen and (min-width: 940px) {
-    text-align: left;
+  @media only screen and (min-width: 470px) {
+    @include font-size(3);
+  }
+
+  @media only screen and (min-width: 570px) {
+    @include font-size(3.5);
+  }
+
+  // @media only screen and (min-width: 768px) {
+
+  // }
+
+  span {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+
+    @media only screen and (min-width: 470px) {
+      @include font-size(3);
+    }
+
+    @media only screen and (min-width: 570px) {
+      @include font-size(4);
+    }
+
+    @media only screen and (min-width: 768px) {
+      margin: 0;
+      @include font-size(6);
+    }
+  }
+
+  span:nth-of-type(5) {
+    display: inline-block;
   }
 }
 
