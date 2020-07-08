@@ -1,157 +1,204 @@
 
-main {
-  width: 100%;
-  height: 100%;
-  background: url("../images/cookie-the-pom-large.jpg");
+:root {
+	--delay: 1s;
+	--duration: 1000ms;
+	--iterations: 1;
+}
+
+/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+
+@keyframes clip-text {
+	from {
+		clip-path: inset(0 100% 0 0);
+  }
+
+	to {
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes text-revealer {
+
+  0%,
+  50% {
+		transform-origin: 0 50%;
+	}
+
+  60%,
+  100% {
+		transform-origin: 100% 50%;
+	}
+
+	60% {
+		transform: scaleX(1);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+.main__home {
+  background-image: url("../images/jess-bailey-q10VITrVYUM-unsplash.jpg");
   background-size: cover;
+  background-color: #ffc300;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
   background-position: center center;
-  background-color: #a1544a;
-  background-blend-mode: luminosity;
+  margin-top: -100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin: 0 auto;
 
   @media only screen and (min-width: 768px) {
-    padding: 20px 10px;
-  }
-
-  @media only screen and (min-width: 940px) {
-    padding: 30px;
+    width: calc(100vw - 55px);
   }
 }
 
-.postcard {
-  -webkit-box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
-  -moz-box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
-  box-shadow: 1px 3px 14px -1px rgba(161, 84, 74, 0.46);
-  height: 100%;
-  background: /* top, transparent red */
-  linear-gradient(
-    rgba(161, 84, 74, 0.7),
-    rgba(161, 84, 74, 0.7)
-  );
-}
-
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  max-width: 1200px;
-  width: calc(100vw - 100px);
-  margin: 0 auto;
+.name span,
+.name span::after {
+	animation-delay: var(--animation-delay, 2s);
+	animation-iteration-count: var(--iterations, 1);
+	animation-duration: var(--duration, 800ms);
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .name {
-  @include font-size(5);
-
-  font-family: $title-font;
-  color: #a1544a;
-  mix-blend-mode: screen;
-  line-height: 1.2;
-  font-weight: 700;
-  text-transform: uppercase;
+  padding: 10px 15px;
+  position: relative;
   display: block;
-  margin: 15px 0;
-  text-align: center;
 
-  @media only screen and (min-width: 470px) {
-    @include font-size(6);
+  span {
+    @include font-size(7);
+
+    --animation-delay: var(--delay, 0);
+    --animation-duration: var(--duration, 800ms);
+    --animation-iterations: var(--iterations, 1);
+
+    font-family: $pt-serif;
+    text-align: center;
+    color: #378981;
+    line-height: 1.2;
+    font-weight: 700;
+    display: block;
+    max-width: 700px;
+    position: relative;
+    margin: 0 auto;
+    animation-name: clip-text;
+    white-space: wrap;
+    cursor: default;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      pointer-events: none;
+      animation-name: text-revealer;
+    }
   }
 
-  @media only screen and (min-width: 570px) {
-    @include font-size(7);
+  @media only screen and (min-width: 553px) {
+    background: $yellow;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 104px 0 0 90px;
+      border-color: transparent transparent transparent $yellow;
+    }
   }
 
   @media only screen and (min-width: 768px) {
-    @include font-size(8.5);
-  }
+    max-width: 800px;
+    margin: 25px auto;
 
-  @media only screen and (min-width: 940px) {
-    @include font-size(10);
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 100%;
+      width: 100%;
+      height: 100%;
+      background: $yellow;
+    }
   }
 }
 
-.sub-title {
-  @include font-size(2.5);
+.sub-text {
+  @include font-size(1.8);
 
-  font-family: $open-sans;
-  color: $white;
-  line-height: 1.2;
+  font-family: $lato;
   font-weight: 400;
-  margin: 20px;
-  padding: 15px 0;
-
-  @media only screen and (min-width: 470px) {
-    @include font-size(3);
-  }
-
-  @media only screen and (min-width: 570px) {
-    @include font-size(3.5);
-  }
-
-  // @media only screen and (min-width: 768px) {
-
-  // }
-
-  span {
-    display: block;
-    margin: 10px 0;
-    font-weight: 500;
-
-    @media only screen and (min-width: 470px) {
-      @include font-size(3);
-    }
-
-    @media only screen and (min-width: 570px) {
-      @include font-size(4);
-    }
-
-    @media only screen and (min-width: 768px) {
-      margin: 0;
-      @include font-size(6);
-    }
-  }
-
-  span:nth-of-type(5) {
-    display: inline-block;
-  }
-}
-
-.accent-text {
-  @include font-size(1.8);
-
-  font-family: $accent-font;
-  color: #3f8393;
-  line-height: 1.2;
-  text-align: center;
+  color: #212330;
+  padding: 20px;
+  position: relative;
   display: block;
-
-  @media only screen and (min-width: 940px) {
-    text-align: left;
-  }
-}
-
-.btn-containers {
-  padding: 30px 10px 20px;
-  background: url("../images/cookie-the-pom-medium.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-color: #916a7b;
-  background-blend-mode: multiply;
-
-  @media only screen and (min-width: 940px) {
-    width: 50%;
-  }
-}
-
-.home__link {
-  @include font-size(1.8);
-
-  font-family: $accent-font;
+  margin: 0;
+  background: $yellow;
   text-align: center;
-  max-width: 150px;
-  text-decoration: none;
-  margin: 15px auto;
-  display: block;
+
+  @media only screen and (min-width: 768px) {
+    @include font-size(2.5);
+
+    max-width: 768px;
+    margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 124px 90px;
+      border-color: transparent transparent $yellow transparent;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100%;
+      background: $yellow;
+    }
+  }
+}
+
+.center-link {
+  @include font-size(1.2);
+
+  font-family: $title-font;
+  font-weight: 400;
   padding: 15px 20px;
-  color: $white;
-  border-radius: 3px;
-  border: 2px solid #3f8393;
+  max-width: 150px;
+  display: block;
+  margin: 30px auto;
+  text-decoration: none;
+  color: #fff;
+  background: #54aa4f;
+  border-radius: 26px;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    @include font-size(1.5);
+  }
 }

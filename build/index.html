@@ -10,24 +10,35 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <script src="/js/script.min.js"></script>
 </head>
 <body>
-  
+  <header class="header">
+  <nav role="navigation" class="menu">
+    <div class="home-box">
+      <a class="home__link" href="/"><i class="fas fa-home"></i></a>
+      <p class="logo-text">Nishtha Sharma</p>
+    </div>
+      <button class="menu__text">Menu</button>
+      <ul class="menu__items js-toggle-menu">
+        <li class="menu__item"><a class="menu__link" href="/resume.html">Resume</a></li>
+        <li class="menu__item"><a class="menu__link" href="/projects.html">Projects</a></li>
+        <button class="menu-button js-contact">Contact</button>
+      </ul>
+    </nav>
+</header>
   <main class="main main__home">
-    <section class="postcard">
-     <div class="text-wrapper">
-         <h1 class="name">
-           Hi, nice to meet you.
-          </h1>
-         <p class="sub-title">
-           <span>I'm Nishtha,</span> <span>a dog loving,</span> <span>always reading,</span><span>world traveling,</span><span>Front End Developer</span>ready to bring your ideas and designs to life. Take a look around, then let's chat!</p>
-         <span class="accent-text">(oh and...it's pronounced Nishtha)</span>
-        <a class="home__link" href="/resume.html">Learn More</a>
-        <a class="home__link" href="/projects.html">Work</a>
-        <button class="home__link js-contact">Contact</button>
+     <div class="text">
+        <h1 class="name">
+          <span>
+            Hi, i'm Nishtha.
+          </span>
+        </h1>
+          <p class="sub-text">(It's pronounced Nish-ta) I'm a dog loving, always reading, world traveling, Front End Developer ready to bring your ideas and designs to life.</p>
+          <a class="center-link" href="/resume.html">Learn More</a>
      </div>
-    </section>
   </main>
   <footer class="footer">
   <div class="footer__wrapper">

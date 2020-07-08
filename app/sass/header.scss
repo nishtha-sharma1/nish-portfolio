@@ -21,8 +21,6 @@
 }
 
 .home__link {
-	@include font-size(1.6);
-
   color: $medium-dark;
 	align-self: center;
 }
@@ -32,9 +30,8 @@
 }
 
 .logo-text {
-	@include font-size(1.6);
+	@include font-size(1.5);
 
-	padding: 5px 0;
 	max-width: 100px;
 	color: #afc826;
 	font-family: $feature-font;
@@ -49,14 +46,7 @@
 	}
 }
 
-// .logo-text-opposite {
-// 	background: $white;
-// 	color: $medium-dark;
-// }
-
 .menu__text {
-	@include font-size(1.8);
-
 	align-self: center;
 	font-family: $main-font;
 	font-weight: 400;
@@ -83,6 +73,8 @@
 }
 
 .menu__item {
+	@include font-size(1.5);
+
 	padding: 10px 20px;
 
   @media only screen and (min-width: 768px) {
@@ -133,8 +125,6 @@
 }
 
 .menu__link {
-	@include font-size(1.8);
-
 	text-decoration: none;
 	font-family: $main-font;
 	font-weight: 400;
@@ -143,8 +133,6 @@
 }
 
 .menu-button {
-	@include font-size(1.6);
-
 	padding: 10px 20px;
 	margin: 10px 0;
 	background: $light-pink;
