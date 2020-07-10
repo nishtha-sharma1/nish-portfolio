@@ -1,39 +1,40 @@
 .main__projects {
   width: 100%;
-  padding: 30px 0 50%;
-  background: /* top, transparent red */
-  linear-gradient(
-    rgba(154, 10, 53, 0.8),
-    rgba(154, 10, 53, 0.4)
-  ),
-  /* bottom, image */
-  url("../images/dog.jpg");
+  background-image: url("../images/goodnews.jpg");
   background-size: cover;
+  background-color: #ffc300;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
   background-position: center;
+  margin-top: -100px;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
 
   @media only screen and (min-width: 768px) {
-    padding: 50px 0 50%;
+    background-repeat: repeat;
+    background-size: contain;
   }
 }
 
 .wrapper {
-  margin: 20px;
-}
-
-.content-box {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 500px;
-  background: $light-pink;
+  width: 100%;
+  margin: 200px 15px 0;
+  max-width: 700px;
+  background: #f44336;
   border-radius: 5px;
 
-  p {
-    @include font-size(1.6);
-
-    font-family: $main-font;
-    font-weight: 700;
-    margin: 0;
-    text-align: center;
+  @media only screen and (min-width: 768px) {
+    margin: 200px auto 0;
   }
+}
+
+p {
+  @include font-size(1.6);
+
+  font-family: $main-font;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  padding: 30px 20px;
 }

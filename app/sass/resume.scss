@@ -2,19 +2,22 @@
   margin: 40px auto;
   padding: 40px 30px;
   max-width: 1200px;
-  width: calc(100vw - 100px);
   box-shadow: 0 0 5px 1px rgba(216, 216, 216, 1);
+
+  @media only screen and (min-width: 940px) {
+    padding: 60px;
+    width: calc(100vw - 100px);
+  }
 }
 
 .section__container {
-  border-top: 1px solid $medium-dark;
+  border-top: 2px solid #378981;
   padding: 30px 0;
-  max-width: 850px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 940px) {
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 20% 80%;
   }
 }
 
@@ -23,14 +26,14 @@
 
   font-family: $title-font;
   font-weight: 700;
-  color: $medium-dark;
-  padding: 10px;
+  color: #378981;
+  padding: 20px 10px;
   position: relative;
   text-transform: uppercase;
   margin: 0;
   line-height: 1.6;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 940px) {
     @include font-size(1.6);
 
     text-align: center;
@@ -47,16 +50,16 @@
   font-family: $main-font;
   font-weight: 400;
   font-style: italic;
-  color: $black;
+  color: #212330;
   position: relative;
   padding: 10px;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
   grid-column-start: 2;
   grid-column-end: 3;
 
-  @media only screen and (min-width: 768px) {
-    padding: 10px 20px;
+  @media only screen and (min-width: 940px) {
+    padding: 20px 30px;
   }
 }
 
@@ -65,12 +68,16 @@
 
   font-family: $main-font;
   font-weight: 700;
-  color: $black;
+  color: #212330;
   text-transform: uppercase;
   position: relative;
-  margin: 0;
+  margin: 0 0 10px;
   line-height: 1.6;
   display: inline-block;
+
+  @media only screen and (min-width: 940px) {
+    margin: 0 15px 10px 0;
+  }
 }
 
 .text__summary {
@@ -79,17 +86,17 @@
   font-family: $main-font;
   font-weight: 400;
   font-style: italic;
-  color: $black;
-  padding: 10px 0;
-  margin: 0;
+  color: #212330;
+  max-width: 650px;
+  margin: 10px 0;
   line-height: 1.6;
 }
 
 .section__text-container {
   padding: 10px;
 
-  @media only screen and (min-width: 768px) {
-    padding: 10px 20px;
+  @media only screen and (min-width: 940px) {
+    padding: 20px;
   }
 }
 
@@ -99,7 +106,7 @@
   font-family: $main-font;
   line-height: 1.6;
   font-weight: 400;
-  color: $black;
+  color: #212330;
   text-transform: uppercase;
 }
 
@@ -119,7 +126,7 @@
         position: absolute;
         height: 7px;
         width: 100px;
-        background: linear-gradient(90deg, rgba(154, 10, 53, 1) 62%, rgba(255, 233, 236, 1) 100%);
+        background: linear-gradient(90deg, rgba(255, 195, 0, 1) 62%, rgba(255, 233, 236, 1) 100%);
         top: 40%;
         left: 100px;
       }
@@ -131,7 +138,7 @@
         position: absolute;
         height: 7px;
         width: 100px;
-        background: linear-gradient(90deg, rgba(154, 10, 53, 1) 50%, rgba(255, 233, 236, 1) 80%);
+        background: linear-gradient(90deg, rgba(255, 195, 0, 1) 50%, rgba(255, 233, 236, 1) 80%);
         top: 40%;
         left: 100px;
       }
@@ -143,7 +150,7 @@
         position: absolute;
         height: 7px;
         width: 100px;
-        background: linear-gradient(90deg, rgba(154, 10, 53, 1) 15%, rgba(255, 233, 236, 1) 60%);
+        background: linear-gradient(90deg, rgba(255, 195, 0, 1) 15%, rgba(255, 233, 236, 1) 60%);
         top: 40%;
         left: 100px;
       }
@@ -153,9 +160,12 @@
 
 .list__description {
   padding-inline-start: 20px;
+  margin: 0 0 35px;
+  max-width: 700px;
 
   .list-item {
     text-transform: initial;
+    margin: 10px 0;
   }
 }
 
@@ -165,20 +175,26 @@
   font-family: $main-font;
   font-weight: 700;
   font-style: italic;
-  color: $medium-dark;
+  color: #378981;
   display: block;
   text-transform: uppercase;
+
+  @media only screen and (min-width: 940px) {
+    display: inline-block;
+  }
 }
 
 .resume-link {
   @include font-size(1.5);
 
   font-weight: 400px;
-  max-width: 100px;
+  max-width: 150px;
   text-transform: uppercase;
   display: block;
-  margin: 0 auto 20px;
+  margin: 20px auto;
   grid-column-start: 1;
   grid-column-end: 3;
   padding: 10px 20px;
+  border-radius: 30px;
+  background: #689d4d;
 }

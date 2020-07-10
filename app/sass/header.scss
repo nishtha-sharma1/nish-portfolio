@@ -1,15 +1,20 @@
 .header {
 	width: 100%;
 	position: relative;
-	background: transparent;
+	background: rgba($color: #fff, $alpha: .8);
 }
 
 .menu {
 	width: calc(100vw - 55px);
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 25px 0 20px;
 	display: flex;
 	justify-content: space-between;
+
+	@media only screen and (min-width: 768px) {
+		padding: 0;
+	}
 }
 
 .home-box {
@@ -21,7 +26,9 @@
 }
 
 .home__link {
-  color: $medium-dark;
+	@include font-size(2);
+
+  color: #f44336;
 	align-self: center;
 }
 
@@ -30,31 +37,38 @@
 }
 
 .logo-text {
-	@include font-size(1.5);
+	@include font-size(2);
 
 	max-width: 100px;
-	color: #afc826;
-	font-family: $feature-font;
-	font-weight: 700;
+	color: #fff;
+	background: #378981;
+	font-family: $title-font;
+	font-weight: 400;
+	margin: 0;
+	padding: 10px;
 	text-transform: uppercase;
 	align-self: center;
+	border-radius: 30px;
 	height: fit-content;
 
 	@media only screen and (min-width: 768px) {
 		max-width: 200px;
-		padding: 10px;
 	}
 }
 
 .menu__text {
+	@include font-size(2);
+
 	align-self: center;
 	font-family: $main-font;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform: uppercase;
 	text-align: right;
-	color: $medium-dark;
-	padding: 5px 10px;
+	color: #378981;
+	padding: 10px 15px;
+	max-width: 150px;
 	text-decoration: none;
+	border-style: none;
 	background: transparent;
 
 	@media only screen and (min-width: 768px) {
@@ -73,13 +87,13 @@
 }
 
 .menu__item {
-	@include font-size(1.5);
+	@include font-size(1.6);
 
-	padding: 10px 20px;
+  padding: 30px 15px 0;
 
   @media only screen and (min-width: 768px) {
     display: inline-block;
-		padding: 10px 20px;
+		padding: 10px 30px 10px 0;
 	}
 }
 
@@ -91,7 +105,7 @@
 	visibility: hidden;
 	transition-timing-function: ease-in;
 	transition: 0.2s;
-	border-top: 2px solid $bright-red;
+	border-top: 2px solid #ffc300;
 
 	@media only screen and (min-width: 768px) {
 		position: static;
@@ -117,7 +131,6 @@
 	z-index: 1;
 	visibility: visible;
 	height: 100vh;
-	color: $medium-dark;
 
 	@media only screen and (min-width: 768px) {
 		display: none;
@@ -125,31 +138,33 @@
 }
 
 .menu__link {
+	@include font-size(2);
+
 	text-decoration: none;
 	font-family: $main-font;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform: uppercase;
-	color: $medium-dark;
+	color: #378981;
+
+	@media only screen and (min-width: 768px) {
+		@include font-size(1.6);
+	}
 }
 
 .menu-button {
+	@include font-size(1.6);
+
 	padding: 10px 20px;
-	margin: 10px 0;
-	background: $light-pink;
-	border-radius: 3px;
-	color: $bright-red;
+	margin: 30px 0;
+	background: #f44336;
+	border-radius: 26px;
+	color: $white;
 	border-style: none;
 	font-family: $main-font;
 	font-weight: 700;
 	text-transform: uppercase;
-}
 
-.white-menu-text {
-	color: $white;
-}
-
-.white {
 	@media only screen and (min-width: 768px) {
-		color: $white;
+		margin: 10px 0;
 	}
 }
