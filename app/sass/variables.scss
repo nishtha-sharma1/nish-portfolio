@@ -13,14 +13,20 @@ $white: #fff;
 $black: #000;
 $grey: #d8d8d8;
 
+$pure-yellow: #ffc300;
+$dark-blue: #212330;
+$bright-red: #f44336;
+$dark-cyan: #378981;
+$moderate-green: #689e4d;
+
 $yellow: rgba($color: #ffc300, $alpha: .9);
 
-$bright-red: #c12957;
 $medium-dark: #9a0a35;
 $light-pink: #ffe9ec;
 
 $dark: #1f1425;
 $text: #fbfdf9;
+$what: #fff457;
 
 // Font Size
 @mixin font-size($sizeValue: 1.6) {

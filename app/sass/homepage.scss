@@ -41,7 +41,7 @@
 .main__home {
   background-image: url("../images/jess-bailey-q10VITrVYUM-unsplash.jpg");
   background-size: cover;
-  background-color: #ffc300;
+  background-color: $pure-yellow;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-position: center center;
@@ -85,7 +85,7 @@
 
     font-family: $pt-serif;
     text-align: center;
-    color: #689e4d;
+    color: $moderate-green;
     line-height: 1.2;
     font-weight: 700;
     display: block;
@@ -148,7 +148,7 @@
   font-family: $lato;
   font-weight: 700;
   line-height: 1.3;
-  color: #212330;
+  color: $dark-blue;
   padding: 20px;
   position: relative;
   display: block;
@@ -196,8 +196,8 @@
   display: block;
   margin: 30px auto 0;
   text-decoration: none;
-  color: #fff;
-  background: #378981;
+  color: $white;
+  background: $dark-cyan;
   border-radius: 26px;
   text-align: center;
 

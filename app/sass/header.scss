@@ -28,7 +28,7 @@
 .home__link {
 	@include font-size(2);
 
-  color: #f44336;
+  color: $bright-red;
 	align-self: center;
 }
 
@@ -40,8 +40,8 @@
 	@include font-size(2);
 
 	max-width: 100px;
-	color: #fff;
-	background: #378981;
+	color: $white;
+	background: $dark-cyan;
 	font-family: $title-font;
 	font-weight: 400;
 	margin: 0;
@@ -64,7 +64,7 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: right;
-	color: #378981;
+	color: $dark-cyan;
 	padding: 10px 15px;
 	max-width: 150px;
 	text-decoration: none;
@@ -105,7 +105,7 @@
 	visibility: hidden;
 	transition-timing-function: ease-in;
 	transition: 0.2s;
-	border-top: 2px solid #ffc300;
+	border-top: 2px solid $pure-yellow;
 
 	@media only screen and (min-width: 768px) {
 		position: static;
@@ -144,7 +144,7 @@
 	font-family: $main-font;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #378981;
+	color: $dark-cyan;
 
 	@media only screen and (min-width: 768px) {
 		@include font-size(1.6);
@@ -156,7 +156,7 @@
 
 	padding: 10px 20px;
 	margin: 30px 0;
-	background: #f44336;
+	background: $bright-red;
 	border-radius: 26px;
 	color: $white;
 	border-style: none;
