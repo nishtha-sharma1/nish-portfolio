@@ -43,6 +43,7 @@
     "minimist": "^1.2.5",
     "normalize.css": "^8.0.1",
     "postcss-sorting": "^5.0.1",
+    "set-value": "^3.0.2",
     "stylelint-config-standard": "^20.0.0",
     "yargs-parser": "^20.0.0"
   }
