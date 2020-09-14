@@ -39,6 +39,7 @@
     "http-proxy": "^1.18.1",
     "js-yaml": "^3.14.0",
     "lodash": "^4.17.20",
+    "minimist": "^1.2.5",
     "normalize.css": "^8.0.1",
     "postcss-sorting": "^5.0.1",
     "stylelint-config-standard": "^20.0.0",
