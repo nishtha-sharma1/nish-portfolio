@@ -39,6 +39,7 @@
     "http-proxy": "^1.18.1",
     "normalize.css": "^8.0.1",
     "postcss-sorting": "^5.0.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "yargs-parser": "^20.0.0"
   }
 }
