@@ -55,6 +55,8 @@
 .text {
   margin: 0 auto;
   padding: 100px 0 0;
+  display: block;
+  width: 100%;
 
   @media only screen and (min-width: 768px) {
     width: calc(100vw - 55px);
@@ -111,7 +113,7 @@
     }
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 554px) {
     background: $yellow;
 
     &::before {
