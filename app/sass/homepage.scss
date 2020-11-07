@@ -1,55 +1,25 @@
 
-:root {
-	--delay: 1s;
-	--duration: 1000ms;
-	--iterations: 1;
+.main__home {
+  background-color: #f3f5f7;
+  width: 100%;
+  display: block;
 }
 
-/* •·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•·•· */
+.gradient-wrapper {
+  background: url("../images/smallmobile-cookie.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  display: block;
+  padding: 40px 15px;
 
-@keyframes clip-text {
-	from {
-		clip-path: inset(0 100% 0 0);
+  @media only screen and (min-width: 768px) {
+    background: url("../images/cookiethepom.png") no-repeat center center;
+    background-size: cover;
   }
 
-	to {
-		clip-path: inset(0 0 0 0);
-	}
-}
+  @media only screen and (min-width: 940px) {
 
-@keyframes text-revealer {
-
-  0%,
-  50% {
-		transform-origin: 0 50%;
-	}
-
-  60%,
-  100% {
-		transform-origin: 100% 50%;
-	}
-
-	60% {
-		transform: scaleX(1);
-	}
-
-	100% {
-		transform: scaleX(0);
-	}
-}
-
-.main__home {
-  background-image: url("../images/jess-bailey-q10VITrVYUM-unsplash.jpg");
-  background-size: cover;
-  background-color: $pure-yellow;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
-  background-position: center center;
-  margin-top: -100px;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+  }
 }
 
 .text {
@@ -63,85 +33,19 @@
   }
 }
 
-.name span,
-.name span::after {
-	animation-delay: var(--animation-delay, 2s);
-	animation-iteration-count: var(--iterations, 1);
-	animation-duration: var(--duration, 800ms);
-	animation-fill-mode: both;
-	animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
 .name {
   padding: 10px 15px;
   position: relative;
   display: block;
   margin: 0 auto 50px;
-
-  span {
-    @include font-size(7);
-
-    --animation-delay: var(--delay, 0);
-    --animation-duration: var(--duration, 800ms);
-    --animation-iterations: var(--iterations, 1);
-
-    font-family: $pt-serif;
-    text-align: center;
-    color: $moderate-green;
-    line-height: 1.2;
-    font-weight: 700;
-    display: block;
-    max-width: 700px;
-    position: relative;
-    margin: 0 auto;
-    animation-name: clip-text;
-    white-space: wrap;
-    cursor: default;
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: 999;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      transform: scaleX(0);
-      transform-origin: 0 50%;
-      pointer-events: none;
-      animation-name: text-revealer;
-    }
-  }
-
-  @media only screen and (min-width: 554px) {
-    background: $yellow;
-
-    &::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 100%;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 104px 0 0 90px;
-      border-color: transparent transparent transparent $yellow;
-    }
-  }
-
-  @media only screen and (min-width: 768px) {
-    max-width: 800px;
-
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 100%;
-      width: 100%;
-      height: 100%;
-      background: $yellow;
-    }
-  }
+  @include font-size(7);
+  text-align: center;
+  color: $moderate-green;
+  line-height: 1.2;
+  font-weight: 700;
+  max-width: 700px;
+  white-space: wrap;
+  cursor: default;
 }
 
 .sub-text {
