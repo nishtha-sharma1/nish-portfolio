@@ -28,8 +28,8 @@
 }
 
 .close-button {
-  @include font-size(2);
-
+  font-family: $primary-font;
+  font-size: 15px;
   display: block;
   text-align: right;
   margin: 10px 0;
@@ -51,11 +51,10 @@
 }
 
 .modal-text {
-  @include font-size(1.6);
-
+  font-family: $primary-font;
+  font-size: 15px;
   text-align: center;
   padding: 0 10px;
-  font-family: $main-font;
   font-weight: 700;
   line-height: 1.3;
 
@@ -65,11 +64,10 @@
 }
 
 .label {
-  @include font-size(1.6);
-
+  font-family: $primary-font;
+  font-size: 15px;
   display: block;
   padding: 10px 0;
-  font-family: $main-font;
   font-weight: 400;
 }
 
@@ -81,11 +79,10 @@
 
 input,
 textarea {
-  @include font-size(1.6);
-
+  font-family: $primary-font;
+  font-size: 15px;
   width: 100%;
   padding: 10px 0;
-  font-family: $main-font;
   font-weight: 400;
   color: $bright-red;
   background: $grey;

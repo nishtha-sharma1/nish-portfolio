@@ -1,115 +1,138 @@
 
-.main__home {
+$pink: rgba(247, 147, 251, 1);
+$pink2: rgba(245, 87, 108, 0.7);
+
+.main {
   background-color: #f3f5f7;
   width: 100%;
   display: block;
 }
 
-.gradient-wrapper {
-  background: url("../images/smallmobile-cookie.png") no-repeat center center fixed;
+$test: rgba(164, 69, 178, .7);
+$test-3: rgba(212, 24, 162, .7);
+$test-4: rgba(255, 0, 102, .7);
+
+.hero-wrapper {
+  background: url("../images/medium.jpg") no-repeat;
   background-size: cover;
+  background-position: center center;
   width: 100%;
-  display: block;
-  padding: 40px 15px;
+  margin-top: -100px;
 
   @media only screen and (min-width: 768px) {
-    background: url("../images/cookiethepom.png") no-repeat center center;
+    background: url("../images/medium.jpg") no-repeat;
     background-size: cover;
+    background-position: center center;
   }
 
   @media only screen and (min-width: 940px) {
-
+    background: url("../images/large.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
 }
 
-.text {
-  margin: 0 auto;
-  padding: 100px 0 0;
-  display: block;
+// background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+
+.hero {
+  background: linear-gradient(-225deg, $test 0%, $test-3 52%, $test-4 100%);
+  background-size: cover;
+  background-position: center center;
   width: 100%;
-
-  @media only screen and (min-width: 768px) {
-    width: calc(100vw - 55px);
-  }
+  margin: 0 auto;
+  display: block;
+  padding: 200px 0 40px;
 }
 
-.name {
-  padding: 10px 15px;
-  position: relative;
-  display: block;
-  margin: 0 auto 50px;
-  @include font-size(7);
-  text-align: center;
-  color: $moderate-green;
-  line-height: 1.2;
+.title {
+  font-family: $secondary-font;
   font-weight: 700;
-  max-width: 700px;
-  white-space: wrap;
-  cursor: default;
+  font-style: italic;
+  color: $white;
+  font-size: 60px;
+  margin: 100px 0 20px;
+  padding: 0 20px;
 }
 
-.sub-text {
-  @include font-size(1.8);
+// .accent {
+//   color: $white;
 
-  font-family: $lato;
+//   &--intro {
+//     font-family: $secondary-font;
+//     font-weight: 700;
+//     font-size: 30px;
+//   }
+
+//   &--parenthesis {
+//     font-family: $secondary-font;
+//     font-weight: 500;
+//     font-style: italic;
+//     font-size: 15px;
+//   }
+
+//   &--life {
+//     font-family: $secondary-font;
+//     font-weight: 500;
+//     font-style: italic;
+//     font-size: 30px;
+//     background: $white;
+//     color: $black;
+//   }
+// }
+
+// .text {
+//   font-family: $primary-font;
+//   font-size: 20px;
+//   font-weight: 400;
+//   color: $white;
+//   margin: 0 auto;
+//   width: 100%;
+//   text-align: center;
+//   padding: 0 0 40px;
+
+//   @media only screen and (min-width: 768px) {
+//     width: calc(100vw - 55px);
+//     max-width: 1200px;
+//     font-size: 25px;
+//     padding: 20px;
+//   }
+// }
+
+// background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+// .name {
+//   font-family: $primary-font;
+//   font-size: 20px;
+//   font-weight: 700;
+//   color: $white;
+//   margin: 0 auto;
+//   padding: 100px 0 15px 0;
+
+//   @media only screen and (min-width: 768px) {
+//     font-size: 70px;
+//     width: calc(100vw - 55px);
+//     max-width: 1200px;
+//   }
+// }
+
+.link {
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 400;
-  line-height: 1.3;
-  color: $dark-blue;
-  padding: 20px;
-  position: relative;
-  display: block;
-  margin: 0;
-  background: $yellow;
-  text-align: center;
-
-  @media only screen and (min-width: 768px) {
-    @include font-size(2.5);
-
-    max-width: 768px;
-    margin: 0 auto;
-
-    &::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      right: 100%;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 104px 90px;
-      border-color: transparent transparent $yellow transparent;
-    }
-
-    &::after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 100%;
-      width: 100%;
-      height: 100%;
-      background: $yellow;
-    }
-  }
-}
-
-.center-link {
-  @include font-size(1.2);
-
-  font-family: $title-font;
-  font-weight: 400;
+  border: 1px solid blue;
   padding: 15px 20px;
-  max-width: 150px;
+  max-width: 155px;
   display: block;
   margin: 30px auto 0;
   text-decoration: none;
-  color: $white;
-  background: $dark-cyan;
-  border-radius: 26px;
+  color: #333b47;
   text-align: center;
 
   @media only screen and (min-width: 768px) {
-    @include font-size(1.5);
-
     margin: 60px auto 0;
   }
+}
+
+.thumbnail {
+  height: 300px;
+  width: 200px;
 }

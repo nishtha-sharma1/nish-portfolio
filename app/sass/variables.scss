@@ -1,8 +1,6 @@
 // Font
-$title-font: 'Roboto', sans-serif;
-$main-font: 'Karla', sans-serif;
-$lato: 'Lato', sans-serif;
-$pt-serif: 'PT Serif', serif;
+$primary-font: 'Hind Siliguri', sans-serif;
+$secondary-font: 'Playfair Display', serif;
 
 // Colors
 $white: #fff;
@@ -14,38 +12,9 @@ $dark-blue: #212330;
 $bright-red: #f44336;
 $dark-cyan: #378981;
 $moderate-green: #689e4d;
-
-$yellow: rgba($color: #ffc300, $alpha: .9);
-
 $medium-dark: #9a0a35;
 $light-pink: #ffe9ec;
 
 $dark: #1f1425;
 $text: #fbfdf9;
 $what: #fff457;
-
-// Font Size
-@mixin font-size($sizeValue: 1.6) {
-  font-size: ($sizeValue * 10) + px;
-  font-size: $sizeValue + rem;
-}
-
-// Base Styles
-.link {
-  font-family: $main-font;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.solid-link {
-  &--white {
-    color: $medium-dark;
-    background: $white;
-  }
-
-  &--medium-dark {
-    color: $white;
-    background: $medium-dark;
-  }
-}

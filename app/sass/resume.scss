@@ -21,31 +21,25 @@
   }
 }
 
-.title {
-  @include font-size(1.4);
-
-  font-family: $title-font;
-  font-weight: 700;
-  color: $dark-cyan;
-  padding: 20px 10px;
-  position: relative;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 1.6;
-
-  @media only screen and (min-width: 940px) {
-    @include font-size(1.6);
-  }
-}
+// .title {
+//   font-size: 15px;
+//   font-family: $primary-font;
+//   font-weight: 700;
+//   color: $dark-cyan;
+//   padding: 20px 10px;
+//   position: relative;
+//   text-transform: uppercase;
+//   margin: 0;
+//   line-height: 1.6;
+// }
 
 .fas {
   margin-right: 15px;
 }
 
 .text__intro {
-  @include font-size(1.6);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 400;
   font-style: italic;
   color: $dark-blue;
@@ -56,15 +50,11 @@
   grid-column-start: 2;
   grid-column-end: 3;
 
-  @media only screen and (min-width: 940px) {
-    padding: 20px 30px;
-  }
 }
 
 .title__position {
-  @include font-size(1.6);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 700;
   color: $dark-blue;
   text-transform: uppercase;
@@ -79,9 +69,8 @@
 }
 
 .text__summary {
-  @include font-size(1.6);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 400;
   font-style: italic;
   color: $dark-blue;
@@ -99,9 +88,8 @@
 }
 
 .list-item {
-  @include font-size(1.6);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   line-height: 1.6;
   font-weight: 400;
   color: $dark-blue;
@@ -168,9 +156,8 @@
 }
 
 .title__small {
-  @include font-size(1.4);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 700;
   font-style: italic;
   color: $dark-cyan;
@@ -183,8 +170,8 @@
 }
 
 .resume-link {
-  @include font-size(1.5);
-
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 400px;
   max-width: 150px;
   text-transform: uppercase;

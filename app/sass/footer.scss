@@ -11,7 +11,7 @@
 .copyright {
   display: block;
   text-align: center;
-  font-family: $main-font;
+  font-family: $primary-font;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: (12/12);
@@ -28,8 +28,7 @@
 }
 
 .social {
-  @include font-size(1.6);
-
+  font-size: 15px;
   color: $black;
 }
 

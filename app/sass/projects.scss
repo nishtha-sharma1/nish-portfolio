@@ -30,9 +30,8 @@
 }
 
 .under-construction {
-  @include font-size(1.6);
-
-  font-family: $main-font;
+  font-size: 15px;
+  font-family: $primary-font;
   font-weight: 700;
   margin: 0;
   text-align: center;

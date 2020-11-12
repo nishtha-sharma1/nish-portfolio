@@ -4,12 +4,11 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta charset="utf-8">
   <title>Nishtha Sharma</title>
-  <link rel="stylesheet" href="/sass/styles.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sass/styles.min.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="/js/script.min.js"></script>
 </head>
 <body>
@@ -22,21 +21,52 @@
       <button class="menu__text">Menu</button>
       <ul class="menu__items js-toggle-menu">
         <li class="menu__item"><a class="menu__link" href="/resume.html">Resume</a></li>
-        <li class="menu__item"><a class="menu__link" href="https://github.com/nishtha-sharma1">Projects</a></li>
-        <button class="menu-button js-contact">Contact</button>
+        <li class="menu__item"><a class="menu__link" href="#projects">Projects</a></li>
       </ul>
     </nav>
 </header>
   <main class="main main__home">
-    <div class="gradient-wrapper">
-      <h1 class="name">
-        Hi, i'm Nishtha.
-      </h1>
-        <a class="center-link" href="/resume.html">Learn More</a>
+    <div class="hero-wrapper">
+      <div class="hero">
+        <h1 class="title">Hi, I'm Nishtha</h1>
+        <span class="accent-text">(pronounced Nish-ta)</p>
+          <p> I'm a front end developer ready to bring your ideas and designs to life.</p>
+          <a class="link" href="/resume.html">Career History</a>
+          <button class="menu-button js-contact"> <a href="mailto:sharmanish22@gmail.com">Say Hello</a></button>
+      </div>
     </div>
-     <!-- <div class="text">
-        <p class="sub-text">(It's pronounced Nish-ta)<br>I'm a Front End Developer ready to bring your designs to life.</p>
-     </div> -->
+    <!-- <div class="contact">
+      <button class="menu-button js-contact"> <a href="mailto:sharmanish22@gmail.com">Contact</a></button>
+    </div> -->
+    <div class="brands">
+      <p class="section-title">Brands I've worked on</p>
+      <p class="link--brand">CreditCards.com</p>
+      <p class="link--brand">Bankrate</p>
+      <p class="link--brand">The SimpleDollar</p>
+    </div>
+    <div>
+      <p class="section-title" id="projects">Personal Projects</p>
+      <div class="project-grid">
+        <img class="thumbnail" src="/images/goodnews.jpg" alt="image">
+        <p class="project-title">Project Title</p>
+        <a class="link--readme">README</a>
+      </div>
+      <div class="project-grid">
+        <img class="thumbnail" src="/images/goodnews.jpg" alt="image">
+        <p class="project-title">Project Title</p>
+        <a class="link--readme">README</a>
+      </div>
+      <div class="project-grid">
+        <img class="thumbnail" src="/images/goodnews.jpg" alt="image">
+        <p class="project-title">Project Title</p>
+        <a class="link--readme">README</a>
+      </div>
+      <div class="project-grid">
+        <img class="thumbnail" src="/images/goodnews.jpg" alt="image">
+        <p class="project-title">Project Title</p>
+        <a class="link--readme">README</a>
+      </div>
+    </div>
   </main>
   <footer class="footer">
   <div class="footer__wrapper">

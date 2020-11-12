@@ -1,7 +1,8 @@
 .header {
 	width: 100%;
 	position: relative;
-	background: rgba($color: #fff, $alpha: .8);
+	background: transparent;
+	border-bottom: 1px solid $white;
 }
 
 .menu {
@@ -26,9 +27,10 @@
 }
 
 .home__link {
-	@include font-size(2);
-
-  color: $bright-red;
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 400;
+  color: #333b47;
 	align-self: center;
 }
 
@@ -37,15 +39,12 @@
 }
 
 .logo-text {
-	@include font-size(2);
-
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 400;
 	max-width: 100px;
 	color: $white;
-	background: $dark-cyan;
-	font-family: $title-font;
-	font-weight: 400;
 	margin: 0;
-	padding: 10px;
 	text-transform: uppercase;
 	align-self: center;
 	border-radius: 30px;
@@ -57,14 +56,13 @@
 }
 
 .menu__text {
-	@include font-size(2);
-
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 400;
 	align-self: center;
-	font-family: $main-font;
-	font-weight: 700;
 	text-transform: uppercase;
 	text-align: right;
-	color: $dark-cyan;
+	color: $white;
 	padding: 10px 15px;
 	max-width: 150px;
 	text-decoration: none;
@@ -87,8 +85,9 @@
 }
 
 .menu__item {
-	@include font-size(1.6);
-
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 400;
   padding: 30px 15px 0;
 
   @media only screen and (min-width: 768px) {
@@ -105,7 +104,7 @@
 	visibility: hidden;
 	transition-timing-function: ease-in;
 	transition: 0.2s;
-	border-top: 2px solid $pure-yellow;
+	border-top: 2px solid #333b47;
 
 	@media only screen and (min-width: 768px) {
 		position: static;
@@ -119,7 +118,7 @@
 }
 
 .js-toggle-menu--open {
-	background-color: $white;
+	background-color: #f3f5f7;
 	left: 0;
 	top: 77px;
 	opacity: 1;
@@ -138,30 +137,24 @@
 }
 
 .menu__link {
-	@include font-size(2);
-
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 600;
 	text-decoration: none;
-	font-family: $main-font;
-	font-weight: 700;
 	text-transform: uppercase;
-	color: $dark-cyan;
-
-	@media only screen and (min-width: 768px) {
-		@include font-size(1.6);
-	}
+	color: $white;
 }
 
 .menu-button {
-	@include font-size(1.6);
-
+	font-family: $primary-font;
+	font-size: 15px;
+	font-weight: 400;
 	padding: 10px 20px;
 	margin: 30px 0;
 	background: $bright-red;
 	border-radius: 26px;
 	color: $white;
 	border-style: none;
-	font-family: $main-font;
-	font-weight: 700;
 	text-transform: uppercase;
 
 	@media only screen and (min-width: 768px) {
