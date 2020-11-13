@@ -8,7 +8,7 @@ $pink2: rgba(245, 87, 108, 0.7);
   display: block;
 }
 
-$test: rgba(164, 69, 178, .7);
+$test: rgba(164, 69, 178, 1);
 $test-3: rgba(212, 24, 162, .7);
 $test-4: rgba(255, 0, 102, .7);
 
@@ -32,87 +32,47 @@ $test-4: rgba(255, 0, 102, .7);
   }
 }
 
-// background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
-
 .hero {
-  background: linear-gradient(-225deg, $test 0%, $test-3 52%, $test-4 100%);
+  background: linear-gradient(-225deg, $test 10%, $test-3 52%, $test-4 100%);
   background-size: cover;
   background-position: center center;
   width: 100%;
   margin: 0 auto;
   display: block;
-  padding: 200px 0 40px;
+  padding: 100px 0 40px;
+}
+
+.text-wrap {
+  padding: 10px;
 }
 
 .title {
   font-family: $secondary-font;
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 400;
   color: $white;
-  font-size: 60px;
-  margin: 100px 0 20px;
+  font-size: 30px;
+  margin: 20px 0 20px;
   padding: 0 20px;
 }
 
-// .accent {
-//   color: $white;
+.accent-text {
+  font-family: $tertiary-font;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: $white;
+  padding: 10px 20px;
+  max-width: 100px;
+  display: block;
+}
 
-//   &--intro {
-//     font-family: $secondary-font;
-//     font-weight: 700;
-//     font-size: 30px;
-//   }
-
-//   &--parenthesis {
-//     font-family: $secondary-font;
-//     font-weight: 500;
-//     font-style: italic;
-//     font-size: 15px;
-//   }
-
-//   &--life {
-//     font-family: $secondary-font;
-//     font-weight: 500;
-//     font-style: italic;
-//     font-size: 30px;
-//     background: $white;
-//     color: $black;
-//   }
-// }
-
-// .text {
-//   font-family: $primary-font;
-//   font-size: 20px;
-//   font-weight: 400;
-//   color: $white;
-//   margin: 0 auto;
-//   width: 100%;
-//   text-align: center;
-//   padding: 0 0 40px;
-
-//   @media only screen and (min-width: 768px) {
-//     width: calc(100vw - 55px);
-//     max-width: 1200px;
-//     font-size: 25px;
-//     padding: 20px;
-//   }
-// }
-
-// background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
-// .name {
-//   font-family: $primary-font;
-//   font-size: 20px;
-//   font-weight: 700;
-//   color: $white;
-//   margin: 0 auto;
-//   padding: 100px 0 15px 0;
-
-//   @media only screen and (min-width: 768px) {
-//     font-size: 70px;
-//     width: calc(100vw - 55px);
-//     max-width: 1200px;
-//   }
-// }
+.hero-text {
+  font-family: $secondary-font;
+  font-size: 20px;
+  color: $white;
+  font-weight: 400;
+  padding: 10px 20px;
+}
 
 .link {
   font-size: 15px;
