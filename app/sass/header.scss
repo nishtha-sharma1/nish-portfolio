@@ -1,7 +1,6 @@
 .header {
 	width: 100%;
 	position: relative;
-	background: transparent;
 }
 
 .menu {
@@ -11,152 +10,56 @@
 	padding: 25px 0 20px;
 	display: flex;
 	justify-content: space-between;
-
-	@media only screen and (min-width: 768px) {
-		padding: 0;
-	}
-}
-
-.home-box {
-	display: flex;
-
-	@media only screen and (min-width: 768px) {
-		padding: 10px 15px;
-	}
-}
-
-.home__link {
-	font-family: $primary-font;
-	font-size: 15px;
-	font-weight: 400;
-  color: #333b47;
-	align-self: center;
-}
-
-.home-link-hide {
-	display: none;
 }
 
 .logo-text {
-	font-family: $primary-font;
+	font-family: $lato;
 	font-size: 15px;
 	font-weight: 400;
 	max-width: 100px;
-	color: $white;
+	color: $black;
 	margin: 0;
 	text-transform: uppercase;
-	align-self: center;
-	border-radius: 30px;
-	height: fit-content;
-
-	@media only screen and (min-width: 768px) {
-		max-width: 200px;
-	}
+	background: #f7c28d;
+	padding: 5px;
+	border: 5px solid #885939;
 }
 
 .menu__text {
-	font-family: $primary-font;
+	font-family: $lato;
 	font-size: 15px;
 	font-weight: 400;
 	align-self: center;
 	text-transform: uppercase;
 	text-align: right;
-	color: $white;
+	color: $dark-blue;
 	padding: 10px 15px;
 	max-width: 150px;
 	text-decoration: none;
 	border-style: none;
 	background: transparent;
-
-	@media only screen and (min-width: 768px) {
-		display: none;
-	}
 }
 
 .menu__items {
 	list-style: none;
 	margin: 0;
-	padding: 20px 30px;
-
-	@media only screen and (min-width: 768px) {
-		padding: 0;
-	}
+	display: inline-block;
+	align-self: center;
 }
 
 .menu__item {
-	font-family: $primary-font;
+	font-family: $lato;
 	font-size: 15px;
 	font-weight: 400;
-  padding: 30px 15px 0;
-
-  @media only screen and (min-width: 768px) {
-    display: inline-block;
-		padding: 10px 30px 10px 0;
-	}
-}
-
-.js-toggle-menu {
-	position: absolute;
-	left: -100px;
-	top: 100px;
-	opacity: 0;
-	visibility: hidden;
-	transition-timing-function: ease-in;
-	transition: 0.2s;
-	border-top: 2px solid #333b47;
-
-	@media only screen and (min-width: 768px) {
-		position: static;
-		opacity: 1;
-		border-top: none;
-		transition: none;
-		padding: 20px;
-		visibility: visible;
-		color: $white;
-	}
-}
-
-.js-toggle-menu--open {
-	background-color: #f3f5f7;
-	left: 0;
-	top: 77px;
-	opacity: 1;
-	transition: 0.2s;
-	transition-timing-function: ease-out;
-	cursor: pointer;
-	font-size: 2rem;
-	width: 100%;
-	z-index: 1;
-	visibility: visible;
-	height: 100vh;
-
-	@media only screen and (min-width: 768px) {
-		display: none;
-	}
+	padding: 0 0 0 15px;
+	display: inline-block;
 }
 
 .menu__link {
-	font-family: $primary-font;
-	font-size: 15px;
-	font-weight: 600;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $white;
-}
-
-.menu-button {
-	font-family: $primary-font;
+	font-family: $lato;
 	font-size: 15px;
 	font-weight: 400;
-	padding: 10px 20px;
-	margin: 30px 0;
-	background: $bright-red;
-	border-radius: 26px;
-	color: $white;
-	border-style: none;
+	text-decoration: none;
 	text-transform: uppercase;
-
-	@media only screen and (min-width: 768px) {
-		margin: 10px 0;
-	}
+	color: $dark-blue;
 }

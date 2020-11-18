@@ -6,40 +6,38 @@
   <title>Nishtha Sharma</title>
   <link rel="stylesheet" href="/sass/styles.min.css"/>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <script src="/js/script.min.js"></script>
 </head>
 <body>
   @@include('./header.html')
   <main class="main main__home">
     <div class="hero-wrapper">
-      <div class="hero">
-        <div class="text-wrap">
-          <h1 class="title">Hi, I'm Nishtha</h1>
-          <span class="accent-text">(pronounced Nish-ta)</span>
-          <p class="hero-text"> I'm a front end developer ready to bring your ideas and designs to life.</p>
+      <div class="image-holder">
+        <h1 class="hi">Hi.</h1>
+      </div>
+      <div class="hero-text">
+        <h1 class="h-text">I'm Nishtha,</h1>
+        <span class="accent-text">(pronounced Nish-ta)</span> 
+        <p class="a-text">A front end developer ready to help you bring your designs to life.</p>
+        <p class="a-text">Last December, I took some time off work to travel around India and Europe. I had a wonderful experience meeting new people, learning about different cultures, and spending real quality time with relatives. Unfortunately I had to end my travels early due to Covid-19.</p>
+        <p class="a-text">However, as every developer has experienced during a project - plans can unexpectedly change course and we adapt. So I’ve been using this time at home to refine and grow my coding skills by taking online courses & working on projects of my own.  I’d love for you to take a look around and feel free to reach out and say hello.</p>
+        <span class="accent-text">P.S. - not a great designer so please feel free to give feedback on that :)</span>
+        <div class="cta-containers">
+          <a class="link" href="/resume.html">Experience</a>
+          <a class="link" href="mailto:sharmanish22@gmail.com" >Say Hi!</a>
         </div>
-        <a class="link" href="/resume.html">Career History</a>
-        <button class="menu-button js-contact"> <a href="mailto:sharmanish22@gmail.com">Say Hello</a></button>
       </div>
     </div>
-    <!-- <div class="contact">
-      <button class="menu-button js-contact"> <a href="mailto:sharmanish22@gmail.com">Contact</a></button>
-    </div> -->
     <div class="brands">
       <p class="section-title">Brands I've worked on</p>
       <p class="link--brand">CreditCards.com</p>
       <p class="link--brand">Bankrate</p>
       <p class="link--brand">The SimpleDollar</p>
     </div>
-    <div>
-      <p class="section-title" id="projects">Personal Projects</p>
+    <div class="projects">
+      <p class="hp-button">Personal Projects</p>
       <div class="project-grid">
         <img class="thumbnail" src="/images/goodnews.jpg" alt="image">
         <p class="project-title">Project Title</p>
@@ -63,7 +61,7 @@
     </div>
   </main>
   @@include('./footer.html')
-  @@include('./contact.html')
+  <!-- @@include('./contact.html') -->
 </body>
 
 

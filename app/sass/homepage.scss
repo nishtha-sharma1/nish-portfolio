@@ -1,98 +1,205 @@
-
-$pink: rgba(247, 147, 251, 1);
-$pink2: rgba(245, 87, 108, 0.7);
-
 .main {
-  background-color: #f3f5f7;
   width: 100%;
   display: block;
 }
-
-$test: rgba(164, 69, 178, 1);
-$test-3: rgba(212, 24, 162, .7);
-$test-4: rgba(255, 0, 102, .7);
 
 .hero-wrapper {
-  background: url("../images/medium.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
   width: 100%;
-  margin-top: -100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
 
   @media only screen and (min-width: 768px) {
-    background: url("../images/medium.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  @media only screen and (min-width: 940px) {
-    background: url("../images/large.jpg") no-repeat;
-    background-size: cover;
-    background-position: center center;
+    grid-template-columns: 50% 50%;
   }
 }
 
-.hero {
-  background: linear-gradient(-225deg, $test 10%, $test-3 52%, $test-4 100%);
+.image-holder {
+  background: url("../images/medium.jpg");
   background-size: cover;
+  background-color: $dark-brown;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
   background-position: center center;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  padding: 100px 0 40px;
+  position: relative;
+
+  @media only screen and (min-width: 768px) {
+    background: url("../images/large.jpg");
+    background-size: cover;
+    background-color: $dark-brown;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center center;
+  }
 }
 
-.text-wrap {
-  padding: 10px;
-}
-
-.title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  color: $white;
-  font-size: 30px;
-  margin: 20px 0 20px;
-  padding: 0 20px;
-}
-
-.accent-text {
-  font-family: $tertiary-font;
-  font-size: 14px;
+.hi {
+  font-family: $playfair;
+  font-weight: 500;
   font-style: italic;
-  font-weight: 600;
   color: $white;
-  padding: 10px 20px;
-  max-width: 100px;
+  font-size: 90px;
   display: block;
+  padding: 20px 60% 60% 20px;
+  margin: 0;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 115px;
+  }
 }
 
 .hero-text {
-  font-family: $secondary-font;
-  font-size: 20px;
-  color: $white;
-  font-weight: 400;
-  padding: 10px 20px;
+  background: $light-brown;
+  padding: 20px;
 }
 
-.link {
-  font-size: 15px;
-  font-family: $primary-font;
-  font-weight: 400;
-  border: 1px solid blue;
-  padding: 15px 20px;
-  max-width: 155px;
+.h-text {
+  font-size: 45px;
+  font-weight: 500;
+  font-style: italic;
+  color: $black;
+  font-family: $playfair;
   display: block;
-  margin: 30px auto 0;
-  text-decoration: none;
-  color: #333b47;
-  text-align: center;
+  margin: 0;
+  padding: 20px 0 0 0;
 
   @media only screen and (min-width: 768px) {
-    margin: 60px auto 0;
+    font-size: 60px;
+    padding: 40px 0 0 0;
   }
 }
 
+.accent-text {
+  font-size: 12px;
+  font-family: $lato;
+  font-style: italic;
+  display: block;
+  padding: 10px 0;
+  font-weight: 400;
+  color: #cb445c;
+}
+
+.a-text {
+  font-family: $lato;
+  font-size: 14px;
+  padding: 10px 0 0;
+  font-weight: 300;
+  color: $dark-blue;
+  display: block;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.cta-containers {
+  margin: 20px 0 0;
+}
+
+.link {
+  padding: 15px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: $lato;
+  border: 1px solid $dark-blue;
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.brands {
+  background: $light-grey;
+  padding: 20px;
+}
+
+.section-title {
+  display: block;
+  font-size: 15px;
+  font-family: $playfair;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.link--brand {
+  display: block;
+  font-size: 20px;
+  font-family: $lato;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.hp-button {
+  font-family: $playfair;
+  font-weight: 500;
+  font-size: 14px;
+  color: $black;
+  padding: 15px 25px;
+  display: block;
+  text-align: center;
+  background: $white;
+  width: 100%;
+  margin: 20px auto;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.projects {
+  padding: 20px;
+  display: grid;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media only screen and (min-width: 940px) {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+.project-grid {
+  width: calc(100vw - 55px);
+  max-width: 500px;
+  border: 1px solid $black;
+  margin: 15px auto;
+}
+
+.project-title {
+  font-family: $playfair;
+  font-size: 20px;
+  font-weight: 500px;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid $black;
+
+  @media only screen and (min-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  @media only screen and (min-width: 940px) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+}
+
+.link--readme {
+  font-family: $playfair;
+  font-size: 20px;
+  font-weight: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .thumbnail {
-  height: 300px;
-  width: 200px;
+  height: 200px;
+  width: 100%;
 }
