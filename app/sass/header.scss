@@ -1,6 +1,6 @@
 .header {
 	width: 100%;
-	position: relative;
+	background: $purple;
 }
 
 .menu {
@@ -13,53 +13,41 @@
 }
 
 .logo-text {
+	max-width: 100px;
+	margin: 0;
+	border: 1px solid $new-white;
+	padding: 5px;
 	font-family: $lato;
 	font-size: 15px;
 	font-weight: 400;
-	max-width: 100px;
-	color: $black;
-	margin: 0;
+	color: $new-white;
 	text-transform: uppercase;
-	background: #f7c28d;
-	padding: 5px;
-	border: 5px solid #885939;
 }
 
 .menu__text {
-	font-family: $lato;
-	font-size: 15px;
-	font-weight: 400;
-	align-self: center;
-	text-transform: uppercase;
-	text-align: right;
-	color: $dark-blue;
-	padding: 10px 15px;
 	max-width: 150px;
-	text-decoration: none;
 	border-style: none;
+	padding: 10px 15px;
+	align-self: center;
+	text-align: right;
+	text-decoration: none;
 	background: transparent;
+	color: $new-white;
 }
 
 .menu__items {
-	list-style: none;
-	margin: 0;
 	display: inline-block;
+	margin: 0;
 	align-self: center;
+	list-style: none;
 }
 
 .menu__item {
-	font-family: $lato;
-	font-size: 15px;
-	font-weight: 400;
-	padding: 0 0 0 15px;
 	display: inline-block;
+	padding: 0 0 0 15px;
 }
 
 .menu__link {
-	font-family: $lato;
-	font-size: 15px;
-	font-weight: 400;
 	text-decoration: none;
-	text-transform: uppercase;
-	color: $dark-blue;
+	color: $new-white;
 }

@@ -1,22 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function() { 
-  // TODO //
-  // Make sure there is function to check if js is available and if not then show the menu
-  // Change menu text to close if dropdown is shown
-
-  // this function runs when the document has been parsed
-  // const menuText = document.querySelector('.menu__text');
-  // const toggleMenu = document.querySelector('.js-toggle-menu');
-
-  // if (menuText) {
-  //   menuText.addEventListener('click', () => {
-  //     toggleMenu.classList.toggle('js-toggle-menu--open');
-  //     if (toggleMenu.classList.contains('js-toggle-menu--open')) {
-  //      menuText.innerHTML = 'Close';
-  //     } else {
-  //      menuText.innerHTML = 'Menu';
-  //     } 
-  //  });
-  // }
+document.addEventListener("DOMContentLoaded", function() { 
 
   // Debounce function for scroll
   // From: https://medium.com/@TCAS3/debounce-deep-dive-javascript-es6-e6f8d983b7a1
@@ -32,48 +14,43 @@
   //   }
   // }
 
-  // const w = window.innerWidth;
+  const textSection = document.querySelectorAll('.js-dropdown');
 
-  // window.addEventListener('resize', debounce((e)=>{
-  //   if (w > 768) {
-  //     toggleMenu.classList.remove('js-toggle-menu--open');
-  //     menuText.innerHTML = 'Menu';
-  //   }
-  // } ,1000));
+  textSection.forEach((i) => {
+    i.addEventListener('click', (e) => {
+      const t = e.target;
+      e.preventDefault();
+      const c = t.closest('.info').querySelector('.js-text-container');
+      const icon = t.closest('.info').querySelector('.fas');
+      const checkParent = t.closest('.info').querySelector('.text-container__projects');
 
-  // const contactFormButton = document.querySelector('.js-contact');
-  // const contactForm = document.querySelector('.form__wrapper');
-  // const closeButton = document.querySelector('.js-close');
+      if (c.classList.contains('text-container--hide')){
+        c.classList.remove('text-container--hide');
 
-  // if (contactFormButton) {
-  //   contactFormButton.addEventListener('click', () => {
-  //     contactForm.classList.add('form__wrapper--open');
-  //     contactForm.addEventListener('click', (e) => {
-  //       const place = e.target.closest('.form__contact');
-  //       if (!place) {
-  //         contactForm.classList.remove('form__wrapper--open');
-  //       }
-  //     })
-  //   });
-  // }
+        if (checkParent) {
+          c.classList.add('text-container--flex');
+        } else {
+          c.classList.add('text-container--show');
+        }
 
-  // if (closeButton) {
-  //   closeButton.addEventListener('click', () => {
-  //     contactForm.classList.remove('form__wrapper--open');
-  //   });
-  // }
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+        return;
+     }
 
-  // Change text color by page
-//   const menuLink = document.querySelectorAll('.menu__link');
-//   const homeLink = document.querySelector('.home__link');
-//   const logoText = document.querySelector('.logo-text');
+     if (c.classList.contains('text-container--show') || c.classList.contains('text-container--flex')) {
+       c.classList.add('text-container--hide');
 
-//   if (window.location.pathname === "/") {
-//     menuText.classList.add('white-menu-text');
-//     logoText.classList.add('logo-text-opposite');
-//     menuLink.forEach((i) => {
-//       i.classList.add('white');
-//     });
-//     homeLink.classList.add('home-link-hide');
-//   }
-// });
+       if (checkParent) {
+          c.classList.remove('text-container--flex');
+        } else {
+          c.classList.remove('text-container--show');
+        }
+      
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+        return;
+     }
+   });
+  });
+});

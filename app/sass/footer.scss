@@ -6,34 +6,17 @@
   width: calc(100vw - 55px);
 	max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .copyright {
   display: block;
   text-align: center;
-  font-family: $playfair;
+  font-family: $lato;
 	font-weight: 400;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: (12/12);
 	text-transform: uppercase;
   color: $black;
   padding: 10px;
-}
-
-.footer__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0 0;
-}
-
-.social {
-  font-size: 15px;
-  color: $black;
-}
-
-.footer__link {
-  align-self: center;
-  margin: 10px 0;
-  padding: 0 20px;
 }
